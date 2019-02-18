@@ -5,7 +5,7 @@
 		"build": "next build",
 		"export": "next export",
 		"compile": "npm-run-all -s build export",
-		"test": "eslint \"pages/**\""
+		"test": "eslint \"**/*.js\""
 	},
 	"repository": {
 		"type": "git",
@@ -40,6 +40,11 @@
 		}
 	},
 	"lint-staged": {
+		"*.js": [
+			"prettier --write",
+			"npm test",
+			"git add"
+		],
 		"*.{js,json,css,md}": [
 			"prettier --write",
 			"git add"
@@ -102,5 +107,9 @@
 			"navigator": true
 		},
 		"parser": "babel-eslint"
-	}
+	},
+	"eslintIgnore": [
+		"/next/**",
+		"/node_modules/**"
+	]
 }

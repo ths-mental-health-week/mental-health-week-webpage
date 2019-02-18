@@ -10,12 +10,12 @@ const theme = {
 	}
 }
 
-const Page = props => (
+const Page = ({ children }) => (
 	<ThemeProvider theme={theme}>
 		<div>
 			<Meta />
 			{/* <Header /> */}
-			<>{props.children}</>
+			<>{children}</>
 		</div>
 	</ThemeProvider>
 )
