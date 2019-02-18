@@ -5,6 +5,7 @@ notifications:
     email: false
 
 script:
+    - npm run test
     - npm run ci-build
     - echo "mentalhealthweek.se" > out/CNAME
     - touch out/.nojekyll
