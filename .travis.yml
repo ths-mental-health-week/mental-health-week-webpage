@@ -1,9 +1,18 @@
+language: node_js
+node_js: '10'
+cache: npm
+notifications:
+    email: false
+
 script:
-    echo "travis test"
+    - npm run ci-build
+    - echo "mentalhealthweek.se" > out/CNAME
+    - touch out/.nojekyll
 
 deploy:
     provider: pages
     skip-cleanup: true
+    local-dir: out
     github-token: $GITHUB_TOKEN
     on:
         branch: master
