@@ -1,6 +1,6 @@
 import App, { Container } from 'next/app'
-import Page from '../components/Page'
 import { createGlobalStyle } from 'styled-components'
+import Page from '../components/Page'
 
 const GlobalStyle = createGlobalStyle`
 	body {
