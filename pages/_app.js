@@ -5,9 +5,14 @@ import Page from '../components/Page'
 const GlobalStyle = createGlobalStyle`
 	body {
 		margin: 0;
-		background-color: #F38D74;
-		color: #fff;
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		background-color: ${props => props.theme.colors.white};
+		color: ${props => props.theme.colors.black};
+		/* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+		font-family: 'Roboto', sans-serif;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Rubik', sans-serif;
 	}
 `
 

@@ -5,8 +5,10 @@ import Meta from './Meta'
 const theme = {
 	colors: {
 		white: '#fff',
-		primary: '#67a2ce',
-		secondary: '#edc98a'
+		black: '#000',
+		primary: '#F38D74',
+		secondary: '#B63E28',
+		background: '#F38D74'
 	}
 }
 
