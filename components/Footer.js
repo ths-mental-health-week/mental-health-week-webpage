@@ -15,6 +15,12 @@ const FooterContainer = styled(Container)`
 	height: 100%;
 `
 
+const Copyright = styled.p`
+	font-size: 10px;
+	margin: 0;
+	margin-bottom: 10px;
+`
+
 const Disclaimer = styled.div`
 	max-width: 70%;
 `
@@ -55,7 +61,7 @@ export default () => (
 		<FooterContainer>
 			<FlexWrapper>
 				<div>
-					<div>© 2019 THS Mental Health Week</div>
+					<Copyright>© 2019 THS Mental Health Week</Copyright>
 					<Disclaimer>
 						Icons used on the page are made by{' '}
 						<a
