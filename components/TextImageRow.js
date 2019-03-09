@@ -11,16 +11,16 @@ const TextImageRow = styled.div`
 `
 
 const ImageWrapper = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	justify-content: ${({ inverse }) => (inverse ? 'start' : 'end')};
+	 /* display: flex; */
+	/* align-items: center; */
+	/* justify-content: ${({ inverse }) => (inverse ? 'start' : 'end')}; */
 `
 
 const IconImage = styled.img`
 	flex: 1;
 	max-width: 200px;
 	max-height: 200px;
+	float: ${({ inverse }) => (inverse ? 'left' : 'right')};
 `
 
 const TextWrapper = styled.div`
@@ -39,13 +39,13 @@ export default ({ imgSrc, imgAlt, title, inverse, children }) => (
 					{children}
 				</TextWrapper>
 				<ImageWrapper inverse={inverse}>
-					<IconImage src={imgSrc} alt={imgAlt} />
+					<IconImage src={imgSrc} alt={imgAlt} inverse={inverse} />
 				</ImageWrapper>
 			</>
 		) : (
 			<>
 				<ImageWrapper inverse={inverse}>
-					<IconImage src={imgSrc} alt={imgAlt} />
+					<IconImage src={imgSrc} alt={imgAlt} inverse={inverse} />
 				</ImageWrapper>
 				<TextWrapper inverse={inverse}>
 					<Title>{title}</Title>
