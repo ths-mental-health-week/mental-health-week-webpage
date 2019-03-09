@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import screenSizes from '../../utils/screen-sizes'
 
 const Wrapper = styled.header`
 	text-align: center;
@@ -26,6 +27,11 @@ const SkewChildren = styled.div`
 
 const Title = styled.h1`
 	margin: 0;
+	transition: 0.3s font-size;
+
+	@media screen and (min-width: ${screenSizes.desktop.min}) {
+		font-size: 45px;
+	}
 `
 
 const Slogan = styled.h2`
