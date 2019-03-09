@@ -9,7 +9,8 @@ const theme = {
 		darkGrey: '#555',
 		primary: '#F38D74',
 		secondary: '#B63E28',
-		background: '#F38D74'
+		background: '#F38D74',
+		selection: '#ffc4b7'
 	}
 }
 

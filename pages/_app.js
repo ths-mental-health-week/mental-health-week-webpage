@@ -3,6 +3,15 @@ import { createGlobalStyle } from 'styled-components'
 import Page from '../components/Page'
 
 const GlobalStyle = createGlobalStyle`
+	::selection {
+		background: ${props =>
+			props.theme.colors.selection}; /* WebKit/Blink Browsers */
+	}
+
+	::-moz-selection {
+		background: ${props => props.theme.colors.selection}; /* Gecko Browsers */
+	}
+
 	body {
 		margin: 0;
 		background-color: ${props => props.theme.colors.white};
