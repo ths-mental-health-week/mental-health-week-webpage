@@ -4,7 +4,7 @@
 		"start": "next",
 		"build": "next build",
 		"export": "next export",
-		"compile": "npm-run-all -s build export",
+		"ci-build": "npm-run-all -s build export",
 		"test": "eslint \"**/*.js\""
 	},
 	"repository": {
