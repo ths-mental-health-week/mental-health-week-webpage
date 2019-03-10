@@ -16,7 +16,7 @@ const Wrapper = styled.header`
 `
 
 const SkewBackground = styled.span`
-	padding: 10px 20px;
+	padding: 10px 40px;
 	transform: skew(-20deg);
 	background-color: ${({ theme }) => theme.colors.white};
 `
