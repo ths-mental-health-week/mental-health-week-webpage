@@ -3,7 +3,7 @@ import screenSizes from '../../utils/screen-sizes'
 
 const Wrapper = styled.header`
 	text-align: center;
-	width: 100vw;
+	width: 100%;
 	height: 300px;
 	padding: 50px;
 	display: flex;
