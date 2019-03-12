@@ -25,7 +25,7 @@ const SkewedLink = styled.a`
 		background: linear-gradient(
 			to right,
 			${({ theme }) => theme.colors.primary},
-			${({ theme }) => theme.colors.secondary}
+			${({ theme }) => theme.colors.primaryDark}
 		);
 
 		transition: 0.2s transform;

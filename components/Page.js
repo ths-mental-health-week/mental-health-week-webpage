@@ -7,8 +7,10 @@ const theme = {
 		white: '#fff',
 		black: '#000',
 		darkGrey: '#555',
+		lightGrey: '#bbb',
 		primary: '#F38D74',
-		secondary: '#B63E28',
+		primaryDark: '#B63E28',
+		secondary: '#273138',
 		background: '#F38D74',
 		selection: '#ffc4b7'
 	}
