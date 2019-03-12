@@ -5,7 +5,8 @@
 		"build": "next build",
 		"export": "next export",
 		"ci-build": "npm-run-all -s build export",
-		"test": "eslint \"**/*.js\""
+		"test": "eslint \"**/*.js\"",
+		"serve": "serve -p 8080 -s out"
 	},
 	"repository": {
 		"type": "git",
