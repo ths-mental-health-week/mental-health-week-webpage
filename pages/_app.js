@@ -12,6 +12,12 @@ const GlobalStyle = createGlobalStyle`
 		background: ${props => props.theme.colors.selection}; /* Gecko Browsers */
 	}
 
+	html,
+	body,
+	#__next {
+		height: 100%;
+	}
+
 	body {
 		margin: 0;
 		background-color: ${props => props.theme.colors.white};
