@@ -11,6 +11,7 @@ const Footer = styled.footer`
 	background-color: ${({ theme }) => theme.colors.darkGrey};
 	color: ${({ theme }) => theme.colors.white};
 	font-size: 10px;
+	margin-top: 50px;
 
 	a {
 		color: ${({ theme }) => theme.colors.white};

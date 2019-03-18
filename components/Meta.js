@@ -8,7 +8,7 @@ const Meta = () => (
 		<title key="title">THS Mental Health Week</title>
 		<style>
 			{`
-			@import url('https://fonts.googleapis.com/css?family=Roboto|Rubik:400,500,700');
+			@import url('https://fonts.googleapis.com/css?family=Roboto:300|Rubik:400,500,700');
 			`}
 		</style>
 	</Head>
