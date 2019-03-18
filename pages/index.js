@@ -1,20 +1,86 @@
 import styled from 'styled-components'
+import Container from '../components/styles/Container'
+import Header from '../components/styles/Header'
+import SkewedLink from '../components/styles/SkewedLink'
+import Divider from '../components/styles/Divider'
+import Footer from '../components/Footer'
+import TextImageRow from '../components/TextImageRow'
 
-const Wrapper = styled.div`
-	text-align: center;
-	width: 100vw;
-	height: 100vh;
-	padding: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	box-sizing: border-box;
+const Content = styled.main`
+	background-color: ${({ theme }) => theme.colors.white};
+	color: ${({ theme }) => theme.colors.secondary};
+	margin-bottom: 100px;
+`
+
+const Introduction = styled.div`
+	margin-top: 60px;
+
+	h2 {
+		text-align: center;
+	}
 `
 
 export default () => (
-	<Wrapper>
-		<h1>THS Mental Health Week</h1>
-		<h2>Coming soon</h2>
-	</Wrapper>
+	<>
+		<Header
+			title="THS Mental Health Week"
+			secondaryTitle="You gotta nourish to flourish"
+		/>
+		<Content>
+			<Container>
+				<Introduction>
+					<h2>What is Mental Health Week?</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Aliquam dictum, diam sed viverra scelerisque, nisl nisi
+						pharetra neque, id congue lacus mauris non urna. Ut
+						rhoncus mauris vel est condimentum ultricies. Morbi eu
+						pellentesque leo. In ultrices nunc nisi, a pharetra nisl
+						consectetur a. Cras at neque arcu. Aliquam efficitur
+						suscipit tristique. Quisque euismod fringilla sagittis.
+						Integer dictum facilisis volutpat. Ut in enim eget elit
+						sollicitudin interdum id quis magna.
+					</p>
+					<p>
+						Morbi ut nisi sagittis, suscipit quam et, fermentum est.
+						Mauris consequat semper enim sed commodo. Duis fermentum
+						non leo semper viverra. Cras id eleifend nisl. Mauris id
+						sem at ligula convallis maximus. Nam accumsan suscipit
+						nunc et blandit. Proin tincidunt ac nulla vel finibus.
+						Vestibulum at erat quis risus varius rhoncus vitae at
+						urna. Duis tristique hendrerit justo eu lacinia. Nullam
+						non faucibus sapien, sed tincidunt mauris.
+					</p>
+				</Introduction>
+				<Divider />
+				<TextImageRow
+					imgSrc="/static/images/calendar.svg"
+					imgAlt="Calendar icon"
+					title="Upcoming events"
+				>
+					<p>
+						Participate in our upcoming lectures and workshops to
+						learn more about mental health, and how you can take
+						better care of yourself.
+					</p>
+					<SkewedLink href="/schedule">Event Schedule</SkewedLink>
+				</TextImageRow>
+				<TextImageRow
+					imgSrc="/static/images/mental-health.svg"
+					imgAlt=""
+					title="Take care of yourself"
+					inverse
+				>
+					<p>
+						Participate in our upcoming lectures and workshops to
+						learn more about mental health, and how you can take
+						better care of yourself.
+					</p>
+
+					<SkewedLink href="/schedule">Learn more</SkewedLink>
+				</TextImageRow>
+			</Container>
+		</Content>
+		<Footer />
+	</>
 )

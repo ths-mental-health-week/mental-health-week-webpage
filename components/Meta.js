@@ -6,6 +6,11 @@ const Meta = () => (
 		<meta charSet="utf-8" />
 		<link rel="shortcut icon" href="/static/favicon.png" />
 		<title>THS Mental Health Week</title>
+		<style>
+			{`
+			@import url('https://fonts.googleapis.com/css?family=Roboto|Rubik:400,500,700');
+			`}
+		</style>
 	</Head>
 )
 
