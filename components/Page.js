@@ -17,13 +17,15 @@ const FlexContent = styled.div`
 
 const Page = ({ children }) => (
 	<ThemeProvider theme={theme}>
-		<PageWrapper>
+		<>
 			<Navbar />
-			<Meta />
-			{/* <Header /> */}
-			<FlexContent>{children}</FlexContent>
-			<Footer />
-		</PageWrapper>
+			<PageWrapper>
+				<Meta />
+				{/* <Header /> */}
+				<FlexContent>{children}</FlexContent>
+				<Footer />
+			</PageWrapper>
+		</>
 	</ThemeProvider>
 )
 
