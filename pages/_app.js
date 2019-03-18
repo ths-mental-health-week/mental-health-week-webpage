@@ -33,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
 	p {
 		line-height: 1.75;
 		font-size: 16px;
+		font-weight: 300;
 	}
 `
 
