@@ -3,37 +3,20 @@ import Link from 'next/link'
 
 const SkewedLink = styled.a`
 	display: inline-block;
-	background: ${({ theme }) => theme.colors.primary};
-	color: white;
+	background-color: ${({ theme }) => theme.colors.white};
+	color: ${({ theme }) => theme.colors.secondary};
+	border: 3px solid ${({ theme }) => theme.colors.primary};
+	font-size: 16px;
+	font-family: 'Rubik', 'Roboto', sans-serif;
 	padding: 4px 15px;
 	transform: skew(-20deg);
 	text-decoration: none;
-	position: relative;
-	overflow: hidden;
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
+	transition: 0.2s all;
+	margin-left: ${({ marginLeft }) => (marginLeft ? '9px;' : '0')};
+	margin-right: ${({ marginRight }) => (marginRight ? '9px;' : '0')};
 
-	:before {
-		content: '';
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		box-sizing: border-box;
-		-webkit-font-smoothing: antialiased;
-		background: linear-gradient(
-			to right,
-			${({ theme }) => theme.colors.primary},
-			${({ theme }) => theme.colors.primaryDark}
-		);
-
-		transition: 0.2s transform;
-		transform: translateX(100%);
-	}
-
-	&:hover:before {
-		transform: translateX(0);
+	&:hover {
+		background-color: ${({ theme }) => theme.colors.primary};
 	}
 `
 
@@ -43,9 +26,9 @@ const Straightener = styled.span`
 	-webkit-font-smoothing: antialiased;
 `
 
-export default ({ children, href }) => (
+export default ({ children, href, marginLeft, marginRight }) => (
 	<Link prefetch passHref href={href}>
-		<SkewedLink>
+		<SkewedLink marginLeft={marginLeft} marginRight={marginRight}>
 			<Straightener>{children}</Straightener>
 		</SkewedLink>
 	</Link>

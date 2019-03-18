@@ -62,7 +62,9 @@ export default () => (
 						learn more about mental health, and how you can take
 						better care of yourself.
 					</p>
-					<SkewedLink href="/schedule">Event Schedule</SkewedLink>
+					<SkewedLink href="/schedule" marginLeft>
+						Event Schedule
+					</SkewedLink>
 				</TextImageRow>
 				<TextImageRow
 					imgSrc="/static/images/mental-health.svg"
@@ -76,7 +78,9 @@ export default () => (
 						better care of yourself.
 					</p>
 
-					<SkewedLink href="/schedule">Learn more</SkewedLink>
+					<SkewedLink href="/schedule" marginRight>
+						Learn more
+					</SkewedLink>
 				</TextImageRow>
 			</Container>
 		</Content>
