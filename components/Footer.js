@@ -3,6 +3,7 @@ import Container from './styles/Container'
 import FacebookIcon from './icons/Facebook'
 import InstagramIcon from './icons/Instagram'
 import screenSizes from '../utils/screen-sizes'
+import contactInfo from '../utils/contactInfo'
 
 const Footer = styled.footer`
 	display: block;
@@ -108,18 +109,18 @@ export default () => (
 					<h2>Contact us</h2>
 					<p>
 						Email:{' '}
-						<a href="mailto:info@mentalhealthweek.se">
-							info@mentalhealthweek.se
+						<a href={`mailto:${contactInfo.email}`}>
+							{contactInfo.email}
 						</a>
 					</p>
 					<p>
 						Follow us on social media for updates and anouncements!
 					</p>
 					<IconWrapper>
-						<Icon href="https://www.facebook.com/thsmentalhealthweek">
+						<Icon href={contactInfo.facebook}>
 							<FacebookIcon size="100%" />
 						</Icon>
-						<Icon href="https://www.instagram.com/thshealthweek/">
+						<Icon href={contactInfo.instagram}>
 							<InstagramIcon size="100%" />
 						</Icon>
 					</IconWrapper>
