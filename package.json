@@ -111,9 +111,5 @@
 			"navigator": true
 		},
 		"parser": "babel-eslint"
-	},
-	"eslintIgnore": [
-		"/next/**",
-		"/node_modules/**"
-	]
+	}
 }
