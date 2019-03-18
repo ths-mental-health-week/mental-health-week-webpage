@@ -1,5 +1,6 @@
 import { ThemeProvider } from 'styled-components'
 import Meta from './Meta'
+import Footer from './Footer'
 // import Header from './Header'
 
 const theme = {
@@ -22,6 +23,7 @@ const Page = ({ children }) => (
 			<Meta />
 			{/* <Header /> */}
 			<>{children}</>
+			<Footer />
 		</div>
 	</ThemeProvider>
 )

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import Container from '../components/styles/Container'
 import Header from '../components/styles/Header'
-import Footer from '../components/Footer'
 
 const Content = styled.main`
 	background-color: ${({ theme }) => theme.colors.white};
@@ -94,6 +93,5 @@ export default () => (
 				{getSchedule()}
 			</Container>
 		</Content>
-		<Footer />
 	</>
 )

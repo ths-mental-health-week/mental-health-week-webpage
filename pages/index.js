@@ -3,7 +3,6 @@ import Container from '../components/styles/Container'
 import Header from '../components/styles/Header'
 import SkewedLink from '../components/styles/SkewedLink'
 import Divider from '../components/styles/Divider'
-import Footer from '../components/Footer'
 import TextImageRow from '../components/TextImageRow'
 
 const Content = styled.main`
@@ -81,6 +80,5 @@ export default () => (
 				</TextImageRow>
 			</Container>
 		</Content>
-		<Footer />
 	</>
 )
