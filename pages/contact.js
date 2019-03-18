@@ -91,10 +91,10 @@ export default () => (
 						</ContactLink>
 					</ContactDetail>
 					<IconWrapper>
-						<Icon>
+						<Icon href={contactInfo.facebook}>
 							<FacebookIcon size="100%" />
 						</Icon>
-						<Icon>
+						<Icon href={contactInfo.instagram}>
 							<InstagramIcon size="100%" />
 						</Icon>
 					</IconWrapper>
