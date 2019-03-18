@@ -86,13 +86,17 @@ const Icon = styled.a`
 	transition: all 0.2s;
 
 	&:hover {
-		color: ${({ theme }) => theme.colors.darkGrey};
+		color: ${({ theme }) => theme.colors.darkGrey} !important;
 		background-color: ${({ theme }) => theme.colors.white};
 	}
 `
 
 const Disclaimer = styled.div`
 	font-size: 12px;
+
+	p {
+		margin-top: 0;
+	}
 `
 
 export default () => (

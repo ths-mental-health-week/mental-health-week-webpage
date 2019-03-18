@@ -10,7 +10,7 @@ const Button = styled.button`
 	padding: 10px 20px;
 	transform: skew(-20deg);
 	cursor: pointer;
-	transition: 0.3s all;
+	transition: 0.2s all;
 	float: ${props => (props['float-right'] ? 'right' : 'left')};
 	${props => (props['float-right'] ? 'margin-right' : 'margin-left')}: 9px;
 
