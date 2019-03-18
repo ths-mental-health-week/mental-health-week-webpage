@@ -5,7 +5,7 @@ const Meta = () => (
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta charSet="utf-8" />
 		<link rel="shortcut icon" href="/static/favicon.png" />
-		<title>THS Mental Health Week</title>
+		<title key="title">THS Mental Health Week</title>
 		<style>
 			{`
 			@import url('https://fonts.googleapis.com/css?family=Roboto|Rubik:400,500,700');

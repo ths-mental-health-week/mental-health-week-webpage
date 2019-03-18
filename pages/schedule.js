@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Head from 'next/head'
 import Container from '../components/styles/Container'
 import Header from '../components/styles/Header'
 
@@ -80,6 +81,9 @@ function getSchedule() {
 
 export default () => (
 	<>
+		<Head>
+			<title key="title">Schedule | THS Mental Health Week</title>
+		</Head>
 		<Header
 			title="THS Mental Health Week"
 			secondaryTitle="You gotta nourish to flourish"
