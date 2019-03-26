@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import styled from 'styled-components'
 import Head from 'next/head'
 import Container from '../components/styles/Container'
@@ -11,6 +12,7 @@ const Content = styled.main`
 
 const Introduction = styled.div`
 	margin-top: 60px;
+	text-align: center;
 
 	h2 {
 		text-align: center;
@@ -86,15 +88,16 @@ export default () => (
 		</Head>
 		<Header
 			title="THS Mental Health Week"
-			secondaryTitle="You gotta nourish to flourish"
+			secondaryTitle="Your mental health matters"
 		/>
 		<Content>
 			<Container>
 				<Introduction>
 					<h2>Event Schedule</h2>
+					The events will be anounced soon!
 				</Introduction>
 
-				{getSchedule()}
+				{/* {getSchedule()} */}
 			</Container>
 		</Content>
 	</>

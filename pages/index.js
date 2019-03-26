@@ -23,32 +23,21 @@ export default () => (
 	<>
 		<Header
 			title="THS Mental Health Week"
-			secondaryTitle="You gotta nourish to flourish"
+			secondaryTitle="Your mental health matters"
 		/>
 		<Content>
 			<Container>
 				<Introduction>
 					<h2>What is Mental Health Week?</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Aliquam dictum, diam sed viverra scelerisque, nisl nisi
-						pharetra neque, id congue lacus mauris non urna. Ut
-						rhoncus mauris vel est condimentum ultricies. Morbi eu
-						pellentesque leo. In ultrices nunc nisi, a pharetra nisl
-						consectetur a. Cras at neque arcu. Aliquam efficitur
-						suscipit tristique. Quisque euismod fringilla sagittis.
-						Integer dictum facilisis volutpat. Ut in enim eget elit
-						sollicitudin interdum id quis magna.
-					</p>
-					<p>
-						Morbi ut nisi sagittis, suscipit quam et, fermentum est.
-						Mauris consequat semper enim sed commodo. Duis fermentum
-						non leo semper viverra. Cras id eleifend nisl. Mauris id
-						sem at ligula convallis maximus. Nam accumsan suscipit
-						nunc et blandit. Proin tincidunt ac nulla vel finibus.
-						Vestibulum at erat quis risus varius rhoncus vitae at
-						urna. Duis tristique hendrerit justo eu lacinia. Nullam
-						non faucibus sapien, sed tincidunt mauris.
+						We believe that solutions happen when we start sharing
+						what’s going on in our minds to friends, family and even
+						strangers. Mental Health Week is the place where you can
+						share your story of mental health challenges and learn
+						without any fear or restriction. A series of lectures
+						and activities on a different theme every day, where
+						everyone is welcome whether you are seeking help or if
+						you are curious about Mental Health issues.
 					</p>
 				</Introduction>
 				<Divider />
@@ -58,9 +47,8 @@ export default () => (
 					title="Upcoming events"
 				>
 					<p>
-						Participate in our upcoming lectures and workshops to
-						learn more about mental health, and how you can take
-						better care of yourself.
+						A week full of lectures, activities and opportunities to
+						connect. Choose your pick or come for all.
 					</p>
 					<SkewedLink href="/schedule" marginLeft>
 						Event Schedule
@@ -73,14 +61,11 @@ export default () => (
 					inverse
 				>
 					<p>
-						Participate in our upcoming lectures and workshops to
-						learn more about mental health, and how you can take
-						better care of yourself.
+						Make your mental health a priority. Whether you need
+						help or if you are curious about learning more about how
+						your mind works, Mental Health Week is here to give you
+						the tools.
 					</p>
-
-					<SkewedLink href="/schedule" marginRight>
-						Learn more
-					</SkewedLink>
 				</TextImageRow>
 			</Container>
 		</Content>
