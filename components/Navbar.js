@@ -150,7 +150,7 @@ class Navbar extends Component {
 					collapsed={collapsed}
 					onClick={this.reverseCollapse}
 				>
-					Meny
+					Menu
 				</MenuButton>
 				<List collapsed={collapsed}>
 					<Item>
