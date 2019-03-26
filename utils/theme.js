@@ -1,5 +1,5 @@
 const fontNames = {
-	title: 'Montserrat',
+	title: 'Raleway',
 	text: 'Roboto'
 }
 

@@ -81,6 +81,7 @@ const ItemLink = styled.a`
 	text-transform: uppercase;
 	font-size: 14px;
 	font-family: ${({ theme }) => theme.fonts.title};
+	font-weight: 600;
 	transform: skew(-20deg);
 	color: ${({ theme }) => theme.colors.white};
 	box-sizing: border-box;
