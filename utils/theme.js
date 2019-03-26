@@ -1,3 +1,8 @@
+const fontNames = {
+	title: 'Montserrat',
+	text: 'Roboto'
+}
+
 const theme = {
 	colors: {
 		white: '#fff',
@@ -9,7 +14,13 @@ const theme = {
 		secondary: '#273138',
 		background: '#F38D74',
 		selection: '#ffc4b7'
+	},
+	fonts: {
+		title: `'${fontNames.title}', '${fontNames.text}', sans-serif`,
+		text: `'${fontNames.text}', sans-serif`
 	}
 }
+
+export { fontNames }
 
 export default theme

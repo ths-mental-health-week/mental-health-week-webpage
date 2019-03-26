@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { fontNames } from '../utils/theme'
 
 const Meta = () => (
 	<Head>
@@ -6,11 +7,12 @@ const Meta = () => (
 		<meta charSet="utf-8" />
 		<link rel="shortcut icon" href="/static/favicon.png" />
 		<title key="title">THS Mental Health Week</title>
-		<style>
-			{`
-			@import url('https://fonts.googleapis.com/css?family=Roboto:300|Rubik:400,500,700');
-			`}
-		</style>
+		<link
+			href={`https://fonts.googleapis.com/css?family=${
+				fontNames.text
+			}:300|${fontNames.title}:400,700`}
+			rel="stylesheet"
+		/>
 	</Head>
 )
 

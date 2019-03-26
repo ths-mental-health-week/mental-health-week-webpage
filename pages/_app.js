@@ -23,11 +23,11 @@ const GlobalStyle = createGlobalStyle`
 		background-color: ${props => props.theme.colors.white};
 		color: ${props => props.theme.colors.black};
 		/* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-		font-family: 'Roboto', sans-serif;
+		font-family: ${({ theme }) => theme.fonts.text};
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Rubik', sans-serif;
+		font-family: ${({ theme }) => theme.fonts.title};
 	}
 
 	p {

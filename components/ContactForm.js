@@ -7,7 +7,7 @@ const InputWrapper = styled.div`
 `
 
 const InputField = styled.input`
-	font-family: 'Rubik', 'Roboto', sans-serif;
+	font-family: ${({ theme }) => theme.fonts.title};
 	font-size: 16px;
 	display: block;
 	margin-bottom: 20px;
@@ -65,7 +65,7 @@ const InputField = styled.input`
 `
 
 const InputArea = styled.textarea`
-	font-family: 'Rubik', 'Roboto', sans-serif;
+	font-family: ${({ theme }) => theme.fonts.title};
 	font-size: 16px;
 	display: block;
 	margin-bottom: 20px;
@@ -124,7 +124,7 @@ const InputArea = styled.textarea`
 `
 
 const Label = styled.label`
-	font-family: 'Rubik', 'Roboto', sans-serif;
+	font-family: ${({ theme }) => theme.fonts.title};
 	font-size: 16px;
 	display: block;
 	margin-bottom: 3px;

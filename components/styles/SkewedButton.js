@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
-	font-family: 'Rubik', 'Roboto', sans-serif;
+	font-family: ${({ theme }) => theme.fonts.title};
 	font-size: 16px;
 	display: block;
 	background-color: ${({ theme }) => theme.colors.white};

@@ -7,7 +7,7 @@ const SkewedLink = styled.a`
 	color: ${({ theme }) => theme.colors.secondary};
 	border: 3px solid ${({ theme }) => theme.colors.primary};
 	font-size: 16px;
-	font-family: 'Rubik', 'Roboto', sans-serif;
+	font-family: ${({ theme }) => theme.fonts.text};
 	padding: 4px 15px;
 	transform: skew(-20deg);
 	text-decoration: none;
