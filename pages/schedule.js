@@ -94,7 +94,7 @@ export default () => (
 			<Container>
 				<Introduction>
 					<h2>Event Schedule</h2>
-					The events will be anounced soon!
+					The events will be announced soon!
 				</Introduction>
 
 				{/* {getSchedule()} */}
