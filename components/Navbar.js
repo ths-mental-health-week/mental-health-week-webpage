@@ -9,6 +9,7 @@ const Wrapper = styled.nav`
 	background-color: ${({ theme }) => theme.colors.darkGrey};
 	box-sizing: border-box;
 	position: relative;
+	display: flex;
 
 	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
 		padding: 10px 20px;
@@ -136,6 +137,33 @@ const Straightener = styled.span`
 	}
 `
 
+const LogoContainer = styled.div`
+	padding: 0 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media screen and (max-width: ${screenSizes.tablet.max}) {
+		padding: 5px 0;
+		align-items: flex-start;
+	}
+`
+
+const Logo = styled.img`
+	height: 60px;
+
+	@media screen and (max-width: ${screenSizes.tablet.max}) {
+		height: 34px;
+	}
+`
+
+const MenuContainer = styled.div`
+	flex: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+`
+
 class Navbar extends Component {
 	state = { collapsed: true }
 
@@ -148,62 +176,67 @@ class Navbar extends Component {
 
 		return (
 			<Wrapper>
-				<MenuButton
-					collapsed={collapsed}
-					onClick={this.reverseCollapse}
-				>
-					Menu
-				</MenuButton>
-				<List collapsed={collapsed}>
-					<Item>
-						<ActiveLink
-							prefetch
-							passHref
-							href="/"
-							activeClassName="active"
-						>
-							<ItemLink
-								onClick={() =>
-									this.setState({ collapsed: true })
-								}
+				<LogoContainer>
+					<Logo src="/static/images/logo-white.svg" />
+				</LogoContainer>
+				<MenuContainer>
+					<MenuButton
+						collapsed={collapsed}
+						onClick={this.reverseCollapse}
+					>
+						Menu
+					</MenuButton>
+					<List collapsed={collapsed}>
+						<Item>
+							<ActiveLink
+								prefetch
+								passHref
+								href="/"
+								activeClassName="active"
 							>
-								<Straightener>Home</Straightener>
-							</ItemLink>
-						</ActiveLink>
-					</Item>
-					<Item>
-						<ActiveLink
-							prefetch
-							passHref
-							href="/schedule"
-							activeClassName="active"
-						>
-							<ItemLink
-								onClick={() =>
-									this.setState({ collapsed: true })
-								}
+								<ItemLink
+									onClick={() =>
+										this.setState({ collapsed: true })
+									}
+								>
+									<Straightener>Home</Straightener>
+								</ItemLink>
+							</ActiveLink>
+						</Item>
+						<Item>
+							<ActiveLink
+								prefetch
+								passHref
+								href="/schedule"
+								activeClassName="active"
 							>
-								<Straightener>Schedule</Straightener>
-							</ItemLink>
-						</ActiveLink>
-					</Item>
-					<Item>
-						<ActiveLink
-							prefetch
-							passHref
-							href="/contact"
-							activeClassName="active"
-						>
-							<ItemLink
-								onClick={() =>
-									this.setState({ collapsed: true })
-								}
+								<ItemLink
+									onClick={() =>
+										this.setState({ collapsed: true })
+									}
+								>
+									<Straightener>Schedule</Straightener>
+								</ItemLink>
+							</ActiveLink>
+						</Item>
+						<Item>
+							<ActiveLink
+								prefetch
+								passHref
+								href="/contact"
+								activeClassName="active"
 							>
-								<Straightener>Contact</Straightener>
-							</ItemLink>
-						</ActiveLink>
-					</Item>
-				</List>
+								<ItemLink
+									onClick={() =>
+										this.setState({ collapsed: true })
+									}
+								>
+									<Straightener>Contact</Straightener>
+								</ItemLink>
+							</ActiveLink>
+						</Item>
+					</List>
+				</MenuContainer>
 			</Wrapper>
 		)
 	}
