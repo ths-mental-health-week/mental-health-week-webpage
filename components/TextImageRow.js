@@ -14,6 +14,10 @@ const TextImageRow = styled.div`
 		grid-template-columns: 1fr;
 		grid-gap: 20px;
 	}
+
+	&:last-child {
+		margin-bottom: 50px;
+	}
 `
 
 const ImageWrapper = styled.div``
