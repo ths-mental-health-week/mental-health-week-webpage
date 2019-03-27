@@ -21,31 +21,59 @@ const SkewBackground = styled.span`
 	background-color: ${({ theme }) => theme.colors.white};
 `
 
-const SkewChildren = styled.div`
+const Straightener = styled.div`
 	transform: skew(20deg);
+	display: flex;
+	align-items: center;
+`
+
+const TextWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
 `
 
 const Title = styled.h1`
 	margin: 0;
-	transition: 0.3s font-size;
+	font-size: 45px;
 
-	@media screen and (min-width: ${screenSizes.desktop.min}) {
-		font-size: 45px;
+	@media screen and (max-width: ${screenSizes.laptop.max}) {
+		font-size: 32px;
 	}
 `
 
 const Slogan = styled.h2`
 	font-weight: 400;
 	margin: 0;
+	font-size: 24px;
+
+	@media screen and (max-width: ${screenSizes.laptop.max}) {
+		font-size: 18px;
+	}
 `
 
-const Header = ({ title, secondaryTitle }) => (
+const Logo = styled.img`
+	margin-left: 10px;
+	height: 100px;
+
+	@media screen and (max-width: ${screenSizes.laptop.max}) {
+		height: 70px;
+	}
+
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		display: none;
+	}
+`
+
+const Header = ({ title, secondaryTitle, logo }) => (
 	<Wrapper>
 		<SkewBackground>
-			<SkewChildren>
-				<Title>{title}</Title>
-				{secondaryTitle ? <Slogan>{secondaryTitle}</Slogan> : null}
-			</SkewChildren>
+			<Straightener>
+				<TextWrapper>
+					<Title>{title}</Title>
+					{secondaryTitle ? <Slogan>{secondaryTitle}</Slogan> : null}
+				</TextWrapper>
+				{logo ? <Logo src={logo} /> : null}
+			</Straightener>
 		</SkewBackground>
 	</Wrapper>
 )
