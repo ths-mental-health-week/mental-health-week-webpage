@@ -39,6 +39,10 @@ const Title = styled.h1`
 	@media screen and (max-width: ${screenSizes.laptop.max}) {
 		font-size: 32px;
 	}
+
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		font-size: 28px;
+	}
 `
 
 const Slogan = styled.h2`
