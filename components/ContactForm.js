@@ -132,13 +132,6 @@ const Label = styled.label`
 
 export default () => (
 	<form action={`https://formspree.io/${contactInfo.email}`} method="post">
-		<Label for="name">Name</Label>
-		<InputWrapper>
-			<InputField type="text" id="name" name="Name" required />
-			<span className="focus-border">
-				<i />
-			</span>
-		</InputWrapper>
 		<Label for="email">Email</Label>
 		<InputWrapper>
 			<InputField type="email" id="email" name="Email" required />
