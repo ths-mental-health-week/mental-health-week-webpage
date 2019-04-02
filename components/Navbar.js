@@ -177,7 +177,7 @@ class Navbar extends Component {
 		return (
 			<Wrapper>
 				<LogoContainer>
-					<Logo src="/static/images/logo-white.svg" />
+					<Logo src="/static/images/logo-with-text.svg" />
 				</LogoContainer>
 				<MenuContainer>
 					<MenuButton
