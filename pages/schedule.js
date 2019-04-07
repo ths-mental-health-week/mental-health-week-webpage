@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import styled from 'styled-components'
 import Head from 'next/head'
 import Container from '../components/styles/Container'
@@ -12,75 +11,73 @@ const Content = styled.main`
 
 const Introduction = styled.div`
 	margin-top: 60px;
-	text-align: center;
+	/* text-align: center; */
 
 	h2 {
-		text-align: center;
+		font-size: 30px;
+		/* text-align: center; */
 	}
 `
 
-const Schedule = styled.div`
-	margin-top: 60px;
+const ScheduleWrapper = styled.div``
 
-	h2 {
-		text-align: center;
-	}
-`
+const Day = styled.div``
 
-const ScheduleEventItem = ({ event, eindex }) => (
-	<div key={eindex} style={{ borderStyle: 'solid' }}>
-		<span style={{ marginLeft: '10px' }}>{event.time}</span>
-		<span style={{ marginLeft: '30px' }}>{event.desc}</span>
-	</div>
-)
+const DayTitle = ({ children }) => {
+	const Wrapper = styled.h2`
+		display: inline-block;
+		padding: 10px;
+		margin-left: 9px;
+		background: ${({ theme }) => theme.colors.secondary};
+		color: ${({ theme }) => theme.colors.white};
+		transform: skew(-20deg);
+	`
 
-const ScheduleDayItem = ({ day, dindex }) => (
-	<div key={dindex}>
-		<h3>{day.date}</h3>
-
-		{day.events.map((event, eindex) => (
-			<ScheduleEventItem event={event} eindex={eindex} />
-		))}
-
-		<br />
-	</div>
-)
-
-function getSchedule() {
-	const scheduleData = [
-		{
-			date: 'Monday',
-			events: [
-				{ time: '10.00-11.00', desc: 'lorem ipsum' },
-				{ time: '12.00-13.00', desc: 'lorem ipsum' }
-			]
-		},
-		{
-			date: 'Tuesday',
-			events: [
-				{ time: '10.00-11.00', desc: 'lorem ipsum' },
-				{ time: '12.00-13.00', desc: 'lorem ipsum' },
-				{ time: '13.00-15.00', desc: 'lorem ipsum' }
-			]
-		},
-		{
-			date: 'Wednesday',
-			events: [
-				{ time: '10.00-11.00', desc: 'lorem ipsum' },
-				{ time: '12.00-13.00', desc: 'lorem ipsum' }
-			]
-		}
-	]
+	const Straightener = styled.span`
+		display: block;
+		transform: skew(20deg);
+	`
 
 	return (
-		<Schedule>
-			{scheduleData.map((day, dindex) => (
-				<ScheduleDayItem day={day} dindex={dindex} />
-			))}
-		</Schedule>
+		<Wrapper>
+			<Straightener>{children}</Straightener>
+		</Wrapper>
 	)
 }
 
+const EventCard = styled.div`
+	background-color: ${({ theme }) => theme.colors.lightGrey};
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	box-shadow: black 10px 10px 23px -14px;
+	margin-bottom: 40px;
+`
+
+const EventImageWrapper = styled.div`
+	margin-right: 20px;
+`
+
+const EventTextWrapper = styled.div``
+
+const EventImage = styled.img`
+	height: 300px;
+	width: 300px;
+	object-fit: cover;
+`
+
+const EventTitle = styled.h3`
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 25px;
+`
+
+const EventInfo = styled.div`
+	p {
+		margin: 0;
+	}
+`
 export default () => (
 	<>
 		<Head>
@@ -94,10 +91,114 @@ export default () => (
 			<Container>
 				<Introduction>
 					<h2>Event Schedule</h2>
-					The events will be announced soon!
 				</Introduction>
-
-				{/* {getSchedule()} */}
+				<ScheduleWrapper>
+					<Day>
+						<DayTitle>Monday</DayTitle>
+						<EventCard>
+							<EventImageWrapper>
+								<EventImage src="http://guessthelighting.com/wp-content/uploads/2012/02/steve_jobs_albert-watson.jpg" />
+							</EventImageWrapper>
+							<EventTextWrapper>
+								<EventTitle>
+									Lunch Lecture with Anders
+								</EventTitle>
+								<EventInfo>
+									<p>Monday, May 13, 2019</p>
+									<p>12:00 - 13:00</p>
+									<p>
+										Nya Matsalen - Nymble{' '}
+										<a href="/schedule">(Map)</a>
+									</p>
+								</EventInfo>
+								<p>
+									The most important variable for mental
+									health: the quality of your interpersonal
+									relationships. Anton Hallin is a student at
+									KTH and holds a bachelor in cognitive
+									neurosciense from the Unisersity of Skövde
+									from his previous education where he studied
+									positive psychology. In this lunch lecture
+									he will reveal what unites the most happy
+									people in the world, how relationship
+									quality can be enhanced by allowing for
+									vulnerability and how you compliment your
+									friends in the right way (hint, there is a
+									wrong way).
+								</p>
+							</EventTextWrapper>
+						</EventCard>
+						<EventCard>
+							<EventImageWrapper>
+								<EventImage src="https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X_400x400.jpg" />
+							</EventImageWrapper>
+							<EventTextWrapper>
+								<EventTitle>
+									Lunch Lecture with Anders
+								</EventTitle>
+								<EventInfo>
+									<p>Monday, May 13, 2019</p>
+									<p>12:00 - 13:00</p>
+									<p>
+										Nya Matsalen - Nymble{' '}
+										<a href="/schedule">(Map)</a>
+									</p>
+								</EventInfo>
+								<p>
+									The most important variable for mental
+									health: the quality of your interpersonal
+									relationships. Anton Hallin is a student at
+									KTH and holds a bachelor in cognitive
+									neurosciense from the Unisersity of Skövde
+									from his previous education where he studied
+									positive psychology. In this lunch lecture
+									he will reveal what unites the most happy
+									people in the world, how relationship
+									quality can be enhanced by allowing for
+									vulnerability and how you compliment your
+									friends in the right way (hint, there is a
+									wrong way).
+								</p>
+							</EventTextWrapper>
+						</EventCard>
+					</Day>
+					<Day>
+						<DayTitle>Tuesday</DayTitle>
+						<EventCard>
+							<EventImageWrapper>
+								<EventImage src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fb8649f28-6139-11e3-916e-00144feabdc0?source=next&fit=scale-down&width=700" />
+							</EventImageWrapper>
+							<EventTextWrapper>
+								<EventTitle>
+									Lunch Lecture with Anders
+								</EventTitle>
+								<EventInfo>
+									<p>Monday, May 13, 2019</p>
+									<p>12:00 - 13:00</p>
+									<p>
+										Nya Matsalen - Nymble{' '}
+										<a href="/schedule">(Map)</a>
+									</p>
+								</EventInfo>
+								<p>
+									The most important variable for mental
+									health: the quality of your interpersonal
+									relationships. Anton Hallin is a student at
+									KTH and holds a bachelor in cognitive
+									neurosciense from the Unisersity of Skövde
+									from his previous education where he studied
+									positive psychology. In this lunch lecture
+									he will reveal what unites the most happy
+									people in the world, how relationship
+									quality can be enhanced by allowing for
+									vulnerability and how you compliment your
+									friends in the right way (hint, there is a
+									wrong way).
+								</p>
+							</EventTextWrapper>
+						</EventCard>
+					</Day>
+				</ScheduleWrapper>
 			</Container>
 		</Content>
 	</>
