@@ -18,6 +18,10 @@ const Wrapper = styled.div`
 	b {
 		font-weight: 600;
 	}
+
+	h1 {
+		margin-top: 50px;
+	}
 `
 
 export default () => (
