@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import EventCard from './EventCard'
 
-const ScheduleWrapper = styled.div``
+const EventsWrapper = styled.div``
 
 const Day = styled.div``
 
@@ -11,7 +11,7 @@ const DayTitle = styled.h2`
 `
 
 export default () => (
-	<ScheduleWrapper>
+	<EventsWrapper>
 		<Day>
 			<DayTitle>Monday</DayTitle>
 			<EventCard
@@ -88,5 +88,5 @@ export default () => (
 				<a href="http://google.com">Link to Register</a>
 			</EventCard>
 		</Day>
-	</ScheduleWrapper>
+	</EventsWrapper>
 )

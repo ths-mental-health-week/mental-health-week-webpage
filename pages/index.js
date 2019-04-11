@@ -49,7 +49,7 @@ export default () => (
 						A week full of lectures, activities and opportunities to
 						connect. Choose your pick or come for all.
 					</p>
-					<SkewedLink href="/schedule" marginLeft>
+					<SkewedLink href="/events" marginLeft>
 						Event Schedule
 					</SkewedLink>
 				</TextImageRow>

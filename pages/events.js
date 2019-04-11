@@ -21,7 +21,7 @@ const Introduction = styled.div`
 export default () => (
 	<>
 		<Head>
-			<title key="title">Schedule | Mental Health Week</title>
+			<title key="title">Events | Mental Health Week</title>
 		</Head>
 		<Header
 			title="Mental Health Week"
