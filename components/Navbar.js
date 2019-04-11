@@ -207,7 +207,7 @@ class Navbar extends Component {
 							<ActiveLink
 								prefetch
 								passHref
-								href="/schedule"
+								href="/events"
 								activeClassName="active"
 							>
 								<ItemLink
@@ -215,7 +215,7 @@ class Navbar extends Component {
 										this.setState({ collapsed: true })
 									}
 								>
-									<Straightener>Schedule</Straightener>
+									<Straightener>Events</Straightener>
 								</ItemLink>
 							</ActiveLink>
 						</Item>
