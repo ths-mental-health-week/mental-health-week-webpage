@@ -104,9 +104,9 @@ export default () => (
 		<Container>
 			<FlexWrapper>
 				<FlexColumn>
-					<h2>THS Mental Health Week</h2>
+					<h2>Mental Health Week</h2>
 					<p>
-						THS Mental Health Week is a project week which aims to
+						Mental Health Week is a project week which aims to
 						educate and inform students about mental health.
 					</p>
 				</FlexColumn>

@@ -21,7 +21,7 @@ const Introduction = styled.div`
 export default () => (
 	<>
 		<Header
-			title="THS Mental Health Week"
+			title="Mental Health Week"
 			secondaryTitle="Your mental health matters"
 		/>
 		<Content>

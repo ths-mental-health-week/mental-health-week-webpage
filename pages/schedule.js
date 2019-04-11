@@ -84,10 +84,10 @@ function getSchedule() {
 export default () => (
 	<>
 		<Head>
-			<title key="title">Schedule | THS Mental Health Week</title>
+			<title key="title">Schedule | Mental Health Week</title>
 		</Head>
 		<Header
-			title="THS Mental Health Week"
+			title="Mental Health Week"
 			secondaryTitle="Your mental health matters"
 		/>
 		<Content>

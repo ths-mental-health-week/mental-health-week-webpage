@@ -77,7 +77,7 @@ const Icon = styled.a`
 export default () => (
 	<>
 		<Head>
-			<title key="title">Contact | THS Mental Health Week</title>
+			<title key="title">Contact | Mental Health Week</title>
 		</Head>
 
 		<Container>
