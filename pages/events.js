@@ -14,6 +14,7 @@ const Introduction = styled.div`
 	text-align: center;
 
 	h2 {
+		font-size: 30px;
 		text-align: center;
 	}
 `
