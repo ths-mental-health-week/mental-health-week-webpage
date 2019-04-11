@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'next/link'
 import Container from './styles/Container'
 import FacebookIcon from './icons/Facebook'
 import InstagramIcon from './icons/Instagram'
@@ -47,6 +48,7 @@ const FlexColumn = styled.div`
 		font-weight: bold;
 	}
 
+	a,
 	p {
 		line-height: 1.25;
 		font-size: 15px;
@@ -92,7 +94,7 @@ const Icon = styled.a`
 `
 
 const Disclaimer = styled.div`
-	font-size: 12px;
+	/* font-size: 12px; */
 
 	p {
 		margin-top: 0;
@@ -132,7 +134,6 @@ export default () => (
 				</FlexColumn>
 				<FlexColumn>
 					<Disclaimer>
-						<p>© 2019 THS Mental Health Week</p>
 						<p>
 							Icons used on the page are made by{' '}
 							<a
@@ -163,6 +164,12 @@ export default () => (
 								CC 3.0 BY
 							</a>
 						</p>
+						<p>
+							<Link prefetch href="/privacy-policy">
+								<a>Privacy Policy</a>
+							</Link>
+						</p>
+						<p>© 2019 THS Mental Health Week</p>
 					</Disclaimer>
 				</FlexColumn>
 			</FlexWrapper>
