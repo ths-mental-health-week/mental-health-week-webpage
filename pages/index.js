@@ -18,13 +18,13 @@ const Introduction = styled.div`
 	}
 `
 
-const Sponsors = styled.div`
+const SponsorsWrapper = styled.div`
 	h2 {
 		text-align: center;
 	}
 `
 
-const Logos = styled.div`
+const Sponsors = styled.div`
 	display: flex;
 	justify-content: space-between;
 
@@ -81,15 +81,15 @@ export default () => (
 						the tools.
 					</p>
 				</TextImageRow>
-				<Sponsors>
+				<SponsorsWrapper>
 					<h2>Our sponsors</h2>
-					<Logos>
+					<Sponsors>
 						<img src="/static/images/mental-health.svg" alt="" />
 						<img src="/static/images/mental-health.svg" alt="" />
 						<img src="/static/images/mental-health.svg" alt="" />
 						<img src="/static/images/mental-health.svg" alt="" />
-					</Logos>
-				</Sponsors>
+					</Sponsors>
+				</SponsorsWrapper>
 			</Container>
 		</Content>
 	</>
