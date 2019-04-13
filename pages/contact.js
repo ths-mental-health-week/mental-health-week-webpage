@@ -74,6 +74,38 @@ const Icon = styled.a`
 	}
 `
 
+const ProfilesWrapper = styled.div`
+	margin-top: 40px;
+
+	h3 {
+		text-align: center;
+	}
+`
+
+const Profiles = styled.div`
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+`
+
+const ProfileCardStyle = styled.div`
+	margin-left: 40px;
+	margin-bottom: 40px;
+
+	img {
+		width: 250px;
+	}
+`
+
+const ProfileCard = ({ imgsrc, text }) => {
+	return (
+		<ProfileCardStyle>
+			<img src={imgsrc} alt="" />
+			<div>{text}</div>
+		</ProfileCardStyle>
+	)
+}
+
 export default () => (
 	<>
 		<Head>
@@ -103,6 +135,36 @@ export default () => (
 					<ContactForm />
 				</Column>
 			</ContactWrapper>
+
+			<ProfilesWrapper>
+				<h3>MWH Project Team</h3>
+				<Profiles>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="name, role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="name, role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="name, role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="name, role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="name, role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="name, role"
+					/>
+				</Profiles>
+			</ProfilesWrapper>
 		</Container>
 	</>
 )

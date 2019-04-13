@@ -18,6 +18,21 @@ const Introduction = styled.div`
 	}
 `
 
+const Sponsors = styled.div`
+	h2 {
+		text-align: center;
+	}
+`
+
+const Logos = styled.div`
+	display: flex;
+	justify-content: space-between;
+
+	img {
+		width: 100px;
+	}
+`
+
 export default () => (
 	<>
 		<Header
@@ -66,6 +81,15 @@ export default () => (
 						the tools.
 					</p>
 				</TextImageRow>
+				<Sponsors>
+					<h2>Our sponsors</h2>
+					<Logos>
+						<img src="/static/images/mental-health.svg" alt="" />
+						<img src="/static/images/mental-health.svg" alt="" />
+						<img src="/static/images/mental-health.svg" alt="" />
+						<img src="/static/images/mental-health.svg" alt="" />
+					</Logos>
+				</Sponsors>
 			</Container>
 		</Content>
 	</>
