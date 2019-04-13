@@ -27,8 +27,8 @@ const MenuButton = styled.button`
 	padding: 10px 30px 10px 0;
 	background: ${({ collapsed }) =>
 			collapsed
-				? 'url(static/icons/bars-solid.svg)'
-				: 'url(static/icons/times-solid.svg)'}
+				? 'url(/static/icons/bars-solid.svg)'
+				: 'url(/static/icons/times-solid.svg)'}
 		no-repeat right center;
 	/* background-image: url(icons/times-solid.svg); */
 	border: none;

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'next/link'
 import contactInfo from '../utils/contactInfo'
 import SkewedButton from './styles/SkewedButton'
 
@@ -68,7 +69,7 @@ const InputArea = styled.textarea`
 	font-family: ${({ theme }) => theme.fonts.title};
 	font-size: 16px;
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	padding: 10px;
 	resize: none;
 	border: 1px solid #ccc;
@@ -130,6 +131,15 @@ const Label = styled.label`
 	margin-bottom: 3px;
 `
 
+const ButtonWrapper = styled.div`
+	overflow: hidden;
+`
+
+const Disclaimer = styled.div`
+	font-size: 10px;
+	margin-bottom: 10px;
+`
+
 export default () => (
 	<form action={`https://formspree.io/${contactInfo.email}`} method="post">
 		<Label for="email">Email</Label>
@@ -146,8 +156,20 @@ export default () => (
 				<i />
 			</span>
 		</InputWrapper>
-		<SkewedButton type="submit" float-right>
-			Send message
-		</SkewedButton>
+		<Disclaimer>
+			Do not send personal information, or any other sensitive
+			information, if not requested to do so by a project member of THS
+			Mental Health Week. By sending a message to us you consent to
+			reading and understanding our{' '}
+			<Link prefetch href="/privacy-policy">
+				<a>Privacy Policy</a>
+			</Link>
+			.
+		</Disclaimer>
+		<ButtonWrapper>
+			<SkewedButton type="submit" float-right>
+				Send message
+			</SkewedButton>
+		</ButtonWrapper>
 	</form>
 )
