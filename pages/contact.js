@@ -95,13 +95,18 @@ const ProfileCardStyle = styled.div`
 	img {
 		width: 250px;
 	}
+
+	.profileText {
+		text-align: center;
+		margin-top: 10px;
+	}
 `
 
 const ProfileCard = ({ imgsrc, text }) => {
 	return (
 		<ProfileCardStyle>
 			<img src={imgsrc} alt="" />
-			<div>{text}</div>
+			<div className="profileText">{text}</div>
 		</ProfileCardStyle>
 	)
 }
@@ -141,27 +146,27 @@ export default () => (
 				<Profiles>
 					<ProfileCard
 						imgsrc="/static/images/mental-health.svg"
-						text="name, role"
+						text="Name, Role"
 					/>
 					<ProfileCard
 						imgsrc="/static/images/mental-health.svg"
-						text="name, role"
+						text="Name, Role"
 					/>
 					<ProfileCard
 						imgsrc="/static/images/mental-health.svg"
-						text="name, role"
+						text="Name, Role"
 					/>
 					<ProfileCard
 						imgsrc="/static/images/mental-health.svg"
-						text="name, role"
+						text="Name, Role"
 					/>
 					<ProfileCard
 						imgsrc="/static/images/mental-health.svg"
-						text="name, role"
+						text="Name, Role"
 					/>
 					<ProfileCard
 						imgsrc="/static/images/mental-health.svg"
-						text="name, role"
+						text="Name, Role"
 					/>
 				</Profiles>
 			</ProfilesWrapper>
