@@ -13,7 +13,8 @@ const theme = {
 		primaryDark: '#B63E28',
 		secondary: '#273138',
 		background: '#F38D74',
-		selection: '#ffc4b7'
+		selection: '#ffc4b7',
+		link: '#0000ee'
 	},
 	fonts: {
 		title: `'${fontNames.title}', '${fontNames.text}', sans-serif`,
