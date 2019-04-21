@@ -8,6 +8,7 @@ import TextImageRow from '../components/TextImageRow'
 const Content = styled.main`
 	background-color: ${({ theme }) => theme.colors.white};
 	color: ${({ theme }) => theme.colors.secondary};
+	margin-bottom: 100px;
 `
 
 const Introduction = styled.div`

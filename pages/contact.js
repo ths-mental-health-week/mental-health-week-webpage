@@ -75,41 +75,65 @@ const Icon = styled.a`
 `
 
 const ProfilesWrapper = styled.div`
-	margin-top: 40px;
-
-	h3 {
-		text-align: center;
+	h2 {
+		margin: 40px 0;
 	}
 `
 
 const Profiles = styled.div`
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-flow: dense;
+
+	@media screen and (max-width: ${screenSizes.tablet.max}) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		grid-template-columns: 1fr;
+	}
 `
 
 const ProfileCardStyle = styled.div`
-	margin-left: 40px;
-	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
 	img {
-		width: 250px;
+		width: 100%;
+		object-fit: cover;
 	}
 
-	.profileText {
+	.profileName {
 		text-align: center;
-		margin-top: 10px;
+		margin-top: 15px;
+	}
+
+	.profilePosition {
+		text-align: center;
+		font-weight: 600;
+		margin-top: 5px;
 	}
 `
 
-const ProfileCard = ({ imgsrc, text }) => {
+const ProfileCard = ({ imgSrc, imgAlt, name, position }) => {
 	return (
 		<ProfileCardStyle>
-			<img src={imgsrc} alt="" />
-			<div className="profileText">{text}</div>
+			<img src={imgSrc} alt={imgAlt} />
+			<div className="profileName">{name}</div>
+			<div className="profilePosition">{position}</div>
 		</ProfileCardStyle>
 	)
 }
+
+const ProfileFullWidthWrapper = styled.div`
+	width: 100%;
+	background-color: ${({ theme }) => theme.colors.lightGrey};
+	margin-top: 50px;
+	padding-top: 1px;
+	padding-bottom: 50px;
+`
 
 export default () => (
 	<>
@@ -140,36 +164,52 @@ export default () => (
 					<ContactForm />
 				</Column>
 			</ContactWrapper>
-
-			<ProfilesWrapper>
-				<h3>MWH Project Team</h3>
-				<Profiles>
-					<ProfileCard
-						imgsrc="/static/images/mental-health.svg"
-						text="Name, Role"
-					/>
-					<ProfileCard
-						imgsrc="/static/images/mental-health.svg"
-						text="Name, Role"
-					/>
-					<ProfileCard
-						imgsrc="/static/images/mental-health.svg"
-						text="Name, Role"
-					/>
-					<ProfileCard
-						imgsrc="/static/images/mental-health.svg"
-						text="Name, Role"
-					/>
-					<ProfileCard
-						imgsrc="/static/images/mental-health.svg"
-						text="Name, Role"
-					/>
-					<ProfileCard
-						imgsrc="/static/images/mental-health.svg"
-						text="Name, Role"
-					/>
-				</Profiles>
-			</ProfilesWrapper>
 		</Container>
+
+		<ProfileFullWidthWrapper>
+			<Container>
+				<ProfilesWrapper>
+					<h2>MWH Project Team</h2>
+					<Profiles>
+						<ProfileCard
+							imgSrc="/static/images/profile-pictures/Anna%20Strandberg.jpeg"
+							imgAlt="Anna Strandberg"
+							name="Anna Strandberg"
+							position="Project Leader"
+						/>
+						<ProfileCard
+							imgSrc="/static/images/profile-pictures/Alexi%20Ramskog.jpeg"
+							imgAlt="Alexi Ramskog"
+							name="Alexi Ramskog"
+							position="Project Leader"
+						/>
+						<ProfileCard
+							imgSrc="/static/images/profile-pictures/Sidra%20Akbar.jpeg"
+							imgAlt="Sidra Akbar"
+							name="Sidra Akbar"
+							position="Project Leader"
+						/>
+						<ProfileCard
+							imgSrc="/static/images/profile-pictures/Elin%20Dai.jpeg"
+							imgAlt="Elin Dai"
+							name="Elin Dai"
+							position="Team Leader Economy"
+						/>
+						<ProfileCard
+							imgSrc="/static/images/profile-pictures/Anton%20Hallin.jpeg"
+							imgAlt="Anton Hallin"
+							name="Anton Hallin"
+							position="Team Leader Events"
+						/>
+						<ProfileCard
+							imgSrc="/static/images/profile-pictures/Julius%20Celik.jpeg"
+							imgAlt="Julius Celik"
+							name="Julius Celik"
+							position="Team Leader IT and Logistics"
+						/>
+					</Profiles>
+				</ProfilesWrapper>
+			</Container>
+		</ProfileFullWidthWrapper>
 	</>
 )
