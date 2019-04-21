@@ -17,6 +17,9 @@ const EventCard = styled.div`
 
 const EventImageWrapper = styled.div`
 	margin-right: 20px;
+	@media screen and (max-width: ${screenSizes.tablet.max}) {
+		margin: 0;
+	}
 `
 
 const EventTextWrapper = styled.div``
