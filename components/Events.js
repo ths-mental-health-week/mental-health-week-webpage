@@ -69,5 +69,49 @@ export default () => (
 				</a>
 			</EventCard>
 		</Day>
+		<Day>
+			<DayTitle>Friday</DayTitle>
+			<EventCard
+				imgSrc="/static/images/events/5 - Anders Hansen.jpg"
+				imgAlt="Anders Hansen"
+				imgObjectPosition="0 -30px"
+				title="Improve the capacity of your brain"
+				date="Friday, May 17, 2019"
+				time="09:00 - 10:00"
+				location="E1"
+				locationLink="https://goo.gl/maps/AZNdwBhRSq87fXtYA"
+			>
+				<p>
+					{' '}
+					Do you want to get more stress resistant, feel better,
+					improve your memory and get more creative? Then join this
+					lecture with Anders Hansen. He is a chief psychiatrist and
+					will come to KTH on the 17th of May to hold his famous
+					lecture on how exercising is directly related to the
+					functioning of the brain and your mental health. Anders is
+					the author of the best selling books &#34;Hjärnstark&#34;
+					and &#34;Skärmhjärnan&#34; and for this breakfast event he
+					will talk about how to get a mental upgrade!
+				</p>
+				<p>
+					See Anders talk about how exercising makes the brain strong{' '}
+					<a href="https://www.svt.se/nyheter/svtforum/motion-gor-hjarnan-stark-1?fbclid=IwAR3LtpB8XjE29BJgobUOPASPH1OjLKoEOCL9OrBLtBwOtk0YqOsB7bLbXrc">
+						here
+					</a>
+					.
+				</p>
+
+				<p>
+					{' '}
+					This lecture will be held in English Breakfast is provided
+					for the first 200 attending.
+				</p>
+				<p>Sponsored by Erasmus and Crebel consulting</p>
+
+				<a href="https://forms.gle/3J9m81K43tkK7ca89">
+					Link to Register
+				</a>
+			</EventCard>
+		</Day>
 	</EventsWrapper>
 )

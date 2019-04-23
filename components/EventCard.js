@@ -29,6 +29,9 @@ const EventImage = styled.img`
 	width: 300px;
 	object-fit: cover;
 
+	object-position: ${({ imgObjectPosition }) =>
+		imgObjectPosition || 'initial'};
+
 	@media screen and (max-width: ${screenSizes.tablet.max}) {
 		margin-bottom: 20px;
 	}
@@ -50,6 +53,7 @@ const EventInfo = styled.div`
 export default ({
 	imgSrc,
 	imgAlt,
+	imgObjectPosition,
 	title,
 	date,
 	time,
@@ -59,7 +63,11 @@ export default ({
 }) => (
 	<EventCard>
 		<EventImageWrapper>
-			<EventImage src={imgSrc} alt={imgAlt} />
+			<EventImage
+				src={imgSrc}
+				alt={imgAlt}
+				imgObjectPosition={imgObjectPosition}
+			/>
 		</EventImageWrapper>
 		<EventTextWrapper>
 			<EventTitle>{title}</EventTitle>
