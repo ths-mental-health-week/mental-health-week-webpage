@@ -70,6 +70,43 @@ export default () => (
 			</EventCard>
 		</Day>
 		<Day>
+			<DayTitle>Tuesday</DayTitle>
+			<EventCard
+				imgSrc="/static/images/events/2 - Caroline Hedler.jpg"
+				imgAlt="Caroline Hedler"
+				// imgObjectPosition="0 -30px"
+				title="How to manage student stress and anxiety - the most common stress-related problems from the life of 100+ students."
+				date="Tuesday, May 14, 2019"
+				time="12:00 - 13:00"
+				location="TBA"
+				locationLink="#"
+			>
+				<p>
+					University can be a challenging time even for the most
+					relaxed students. For many it’s the first time living away
+					from home, managing your own time and taking care of
+					yourself. This lecture covers the most common causes of
+					student stress and different ways to overcome these. Learn
+					how to cope with stress, procrastination, lack of motivation
+					and focus, worries about the future and how to become a
+					highly productive student.
+				</p>
+				<p>
+					Caroline Hedler works as a student coach at the university
+					of Edinburgh where her daily job is to coach students to
+					reach their personal and academic goals.
+				</p>
+				<p>
+					This lecture will be held in English. Lunch is provided for
+					the first 90 to attend.
+				</p>
+
+				<a href="https://forms.gle/FWYWeKZQ2Rum9vbP7">
+					Link to Register
+				</a>
+			</EventCard>
+		</Day>
+		<Day>
 			<DayTitle>Friday</DayTitle>
 			<EventCard
 				imgSrc="/static/images/events/5 - Anders Hansen.jpg"
@@ -82,7 +119,6 @@ export default () => (
 				locationLink="https://goo.gl/maps/AZNdwBhRSq87fXtYA"
 			>
 				<p>
-					{' '}
 					Do you want to get more stress resistant, feel better,
 					improve your memory and get more creative? Then join this
 					lecture with Anders Hansen. He is a chief psychiatrist and
@@ -102,8 +138,7 @@ export default () => (
 				</p>
 
 				<p>
-					{' '}
-					This lecture will be held in English Breakfast is provided
+					This lecture will be held in English. Breakfast is provided
 					for the first 200 attending.
 				</p>
 				<p>Sponsored by Erasmus and Crebel consulting</p>
