@@ -172,37 +172,37 @@ export default () => (
 					<h2>MWH Project Team</h2>
 					<Profiles>
 						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Anna%20Strandberg.jpeg"
+							imgSrc="/static/images/profile-pictures/Anna%20Strandberg-min.jpeg"
 							imgAlt="Anna Strandberg"
 							name="Anna Strandberg"
 							position="Project Leader"
 						/>
 						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Alexi%20Ramskog.jpeg"
+							imgSrc="/static/images/profile-pictures/Alexi%20Ramskog-min.jpeg"
 							imgAlt="Alexi Ramskog"
 							name="Alexi Ramskog"
 							position="Project Leader"
 						/>
 						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Sidra%20Akbar.jpeg"
+							imgSrc="/static/images/profile-pictures/Sidra%20Akbar-min.jpeg"
 							imgAlt="Sidra Akbar"
 							name="Sidra Akbar"
 							position="Project Leader"
 						/>
 						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Elin%20Dai.jpeg"
+							imgSrc="/static/images/profile-pictures/Elin%20Dai-min.jpeg"
 							imgAlt="Elin Dai"
 							name="Elin Dai"
 							position="Team Leader Economy"
 						/>
 						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Anton%20Hallin.jpeg"
+							imgSrc="/static/images/profile-pictures/Anton%20Hallin-min.jpeg"
 							imgAlt="Anton Hallin"
 							name="Anton Hallin"
 							position="Team Leader Events"
 						/>
 						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Julius%20Celik.jpeg"
+							imgSrc="/static/images/profile-pictures/Julius%20Celik-min.jpeg"
 							imgAlt="Julius Celik"
 							name="Julius Celik"
 							position="Team Leader IT and Logistics"
