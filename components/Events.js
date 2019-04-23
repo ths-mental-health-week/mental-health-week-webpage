@@ -24,6 +24,41 @@ export default () => (
 		<Day>
 			<DayTitle>Monday</DayTitle>
 			<EventCard
+				imgSrc="/static/images/events/1 - Anna Gordh Humlesjo.jpg"
+				imgAlt="Anna Gordh Humlesjö"
+				title="Yoga with Anna Gordh Humlesjö - Theory and practice of yoga"
+				date="Monday, May 13, 2019"
+				time="08:30 - 09:30"
+				location="KTH-Hallen"
+				locationLink="https://goo.gl/maps/xsmZoxV4tczGP8WN7"
+			>
+				<p>
+					Anna has lived and worked with dance and yoga for over 10
+					years. She has a background in contemporary dance, ashtanga
+					vinyasa yoga and psychological coaching and has studied with
+					several internationally recognized teachers in free-form
+					dance, yoga and meditation. She is dedicated to promote
+					contemporary wisdom about human flourishing, how we can
+					empower ourselves and live more of our potential.
+				</p>
+				<p>
+					The yoga class will start with some theoretical insights
+					about the health benefits of yoga. After this we will engage
+					in a yoga class which will work for both experienced and
+					beginners. After the yoga practice a small Breakfast will be
+					served.
+				</p>
+
+				<p>
+					The yoga will be held in English. Breakfast is provided for
+					the first 30 to attend.
+				</p>
+
+				<a href="https://forms.gle/fUuwFMmgPeMYCiAY9">
+					Link to Register
+				</a>
+			</EventCard>
+			<EventCard
 				imgSrc="/static/images/events/1 - Andre.jpg"
 				imgAlt="André Sturesson"
 				title="The research about the powerful effect of physical activity on mental health and performance"
@@ -108,6 +143,34 @@ export default () => (
 		</Day>
 		<Day>
 			<DayTitle>Wednesday</DayTitle>
+			<EventCard
+				imgSrc="/static/images/events/3 - Annika Schüllerqvist.png"
+				imgAlt="Annika Schüllerqvist"
+				title="Breakfast Yoga with Annika Schüllerqvist"
+				date="Wednesday, May 15, 2019"
+				time="08:30 - 09:30"
+				location="KTH-Hallen"
+				locationLink="https://goo.gl/maps/xsmZoxV4tczGP8WN7"
+			>
+				<p>
+					Come and join us for yoga on wednesday morning. The
+					tradition of Yoga has a long history in buddhist and eastern
+					philosophy and is associated with multiple health benefits
+					for both body and mind.
+				</p>
+				<p>
+					This class will work for both beginners and experienced
+					yogis. A small breakfast will be served after class.
+				</p>
+				<p>
+					The yoga will be held in English. Breakfast is provided for
+					the first 30 to attend.
+				</p>
+
+				<a href="https://forms.gle/D63e78JxMewaJVrbA">
+					Link to Register
+				</a>
+			</EventCard>
 			<EventCard
 				imgSrc={[
 					'/static/images/events/3 - Tim.jpeg',
