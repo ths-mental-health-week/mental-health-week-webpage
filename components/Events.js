@@ -141,7 +141,7 @@ export default () => (
 					This lecture will be held in English. Breakfast is provided
 					for the first 200 attending.
 				</p>
-				<p>Sponsored by Erasmus and Crebel consulting</p>
+				<p>Sponsored by Erasmus and Crebel Consulting</p>
 
 				<a href="https://forms.gle/3J9m81K43tkK7ca89">
 					Link to Register
