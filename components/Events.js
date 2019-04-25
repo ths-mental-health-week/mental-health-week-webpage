@@ -78,7 +78,8 @@ export default () => (
 				title="How to manage student stress and anxiety - the most common stress-related problems from the life of 100+ students."
 				date="Tuesday, May 14, 2019"
 				time="12:00 - 13:00"
-				location="TBA"
+				location="B2"
+				locationLink="https://www.kth.se/places/room/id/4a5e9e92-d7aa-486d-8503-b91b331d1662"
 			>
 				<p>
 					University can be a challenging time even for the most
@@ -110,11 +111,11 @@ export default () => (
 			<EventCard
 				imgSrc="/static/images/events/4 - Anton Hallin.jpg"
 				imgAlt="Anton Hallin"
-				// imgObjectPosition="0 -30px"
 				title="The most important variable for mental health: the quality of your interpersonal relationships"
 				date="Thursday, May 16, 2019"
 				time="12:00 - 13:00"
-				location="TBA"
+				location="L2"
+				locationLink="https://goo.gl/maps/ZEppUM2madXmBBeA8"
 			>
 				<p>
 					Anton Hallin is a student at KTH and holds a bachelor in
@@ -147,7 +148,7 @@ export default () => (
 				date="Friday, May 17, 2019"
 				time="09:00 - 10:00"
 				location="E1"
-				locationLink="https://goo.gl/maps/AZNdwBhRSq87fXtYA"
+				locationLink="https://www.kth.se/places/room/id/24565f05-ff18-4306-a50b-24be99ced05d"
 			>
 				<p>
 					Do you want to get more stress resistant, feel better,
