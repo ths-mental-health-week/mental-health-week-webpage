@@ -79,7 +79,6 @@ export default () => (
 				date="Tuesday, May 14, 2019"
 				time="12:00 - 13:00"
 				location="TBA"
-				locationLink="#"
 			>
 				<p>
 					University can be a challenging time even for the most
@@ -102,6 +101,38 @@ export default () => (
 				</p>
 
 				<a href="https://forms.gle/FWYWeKZQ2Rum9vbP7">
+					Link to Register
+				</a>
+			</EventCard>
+		</Day>
+		<Day>
+			<DayTitle>Thursday</DayTitle>
+			<EventCard
+				imgSrc="/static/images/events/4 - Anton Hallin.jpg"
+				imgAlt="Anton Hallin"
+				// imgObjectPosition="0 -30px"
+				title="The most important variable for mental health: the quality of your interpersonal relationships"
+				date="Thursday, May 16, 2019"
+				time="12:00 - 13:00"
+				location="TBA"
+			>
+				<p>
+					Anton Hallin is a student at KTH and holds a bachelor in
+					cognitive neurosciense from the Unisersity of Skövde from
+					his previous education where he studied positive psychology.
+					In this lunch lecture he will reveal what unites the most
+					happy people in the world, how relationship quality can be
+					enhanced by allowing for vulnerability and how you
+					compliment your friends in the right way (hint, there is a
+					wrong way).
+				</p>
+
+				<p>
+					This lecture will be held in English. Lunch is provided for
+					the first 90 to attend.
+				</p>
+
+				<a href="https://forms.gle/z4JUoSkpQiMuNTCk6">
 					Link to Register
 				</a>
 			</EventCard>

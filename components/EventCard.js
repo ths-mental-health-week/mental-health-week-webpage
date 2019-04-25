@@ -75,7 +75,8 @@ export default ({
 				<p>{date}</p>
 				<p>{time}</p>
 				<p>
-					{location} <a href={locationLink}>(Map)</a>
+					{location}{' '}
+					{locationLink ? <a href={locationLink}>(Map)</a> : null}
 				</p>
 			</EventInfo>
 			{children}
