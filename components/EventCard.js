@@ -17,6 +17,9 @@ const EventCard = styled.div`
 
 const EventImageWrapper = styled.div`
 	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+
 	@media screen and (max-width: ${screenSizes.tablet.max}) {
 		margin: 0;
 	}
@@ -34,6 +37,10 @@ const EventImage = styled.img`
 
 	@media screen and (max-width: ${screenSizes.tablet.max}) {
 		margin-bottom: 20px;
+	}
+
+	& + & {
+		margin-top: 20px;
 	}
 `
 
@@ -63,11 +70,22 @@ export default ({
 }) => (
 	<EventCard>
 		<EventImageWrapper>
-			<EventImage
-				src={imgSrc}
-				alt={imgAlt}
-				imgObjectPosition={imgObjectPosition}
-			/>
+			{Array.isArray(imgSrc) ? (
+				imgSrc.map((src, index) => (
+					<EventImage
+						key={imgAlt[index]}
+						src={src}
+						alt={imgAlt[index]}
+						imgObjectPosition={imgObjectPosition}
+					/>
+				))
+			) : (
+				<EventImage
+					src={imgSrc}
+					alt={imgAlt}
+					imgObjectPosition={imgObjectPosition}
+				/>
+			)}
 		</EventImageWrapper>
 		<EventTextWrapper>
 			<EventTitle>{title}</EventTitle>
