@@ -78,7 +78,8 @@ export default () => (
 				title="How to manage student stress and anxiety - the most common stress-related problems from the life of 100+ students."
 				date="Tuesday, May 14, 2019"
 				time="12:00 - 13:00"
-				location="TBA"
+				location="B2"
+				locationLink="https://www.kth.se/places/room/id/4a5e9e92-d7aa-486d-8503-b91b331d1662"
 			>
 				<p>
 					University can be a challenging time even for the most
@@ -106,15 +107,50 @@ export default () => (
 			</EventCard>
 		</Day>
 		<Day>
+			<DayTitle>Wednesday</DayTitle>
+			<EventCard
+				imgSrc={[
+					'/static/images/events/3 - Tim.jpeg',
+					'/static/images/events/3 - Erik.jpg'
+				]}
+				imgAlt={['Tim', 'Erik Bring']}
+				title="Everyones right to function differently - How it is to study with special needs and make music with your nose and tounge."
+				date="Wednesday, May 15, 2019"
+				time="12:00 - 13:00"
+				location="B2"
+				locationLink="https://www.kth.se/places/room/id/4a5e9e92-d7aa-486d-8503-b91b331d1662"
+			>
+				<p>
+					Every single one of us are different. Yet the education
+					system is designed to a great extent with the philosophy of
+					“one size fits all”. In this lecture you will get two
+					different perspectives of how it is to study with special
+					needs. Erik Bring is a Hjärnkoll-ambassador and former
+					student at KTH Bipolar disorder. Tim is a KTH student and
+					performing DJ with a physical handicap which makes it
+					especially important to have a strong mental game.
+				</p>
+
+				<p>
+					This lecture will be held in English. Lunch is provided for
+					the first 90 to attend.
+				</p>
+
+				<a href="https://forms.gle/vFc6SDqDGSHwFkdH8">
+					Link to Register
+				</a>
+			</EventCard>
+		</Day>
+		<Day>
 			<DayTitle>Thursday</DayTitle>
 			<EventCard
 				imgSrc="/static/images/events/4 - Anton Hallin.jpg"
 				imgAlt="Anton Hallin"
-				// imgObjectPosition="0 -30px"
 				title="The most important variable for mental health: the quality of your interpersonal relationships"
 				date="Thursday, May 16, 2019"
 				time="12:00 - 13:00"
-				location="TBA"
+				location="L1"
+				locationLink="https://www.kth.se/places/room/id/9d13ee02-9d07-4415-948f-33befa31981c"
 			>
 				<p>
 					Anton Hallin is a student at KTH and holds a bachelor in
@@ -147,7 +183,7 @@ export default () => (
 				date="Friday, May 17, 2019"
 				time="09:00 - 10:00"
 				location="E1"
-				locationLink="https://goo.gl/maps/AZNdwBhRSq87fXtYA"
+				locationLink="https://www.kth.se/places/room/id/24565f05-ff18-4306-a50b-24be99ced05d"
 			>
 				<p>
 					Do you want to get more stress resistant, feel better,
