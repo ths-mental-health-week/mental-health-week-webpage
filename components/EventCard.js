@@ -17,6 +17,12 @@ const EventCard = styled.div`
 
 const EventImageWrapper = styled.div`
 	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (max-width: ${screenSizes.tablet.max}) {
+		margin: 0;
+	}
 `
 
 const EventTextWrapper = styled.div``
@@ -26,8 +32,15 @@ const EventImage = styled.img`
 	width: 300px;
 	object-fit: cover;
 
+	object-position: ${({ imgObjectPosition }) =>
+		imgObjectPosition || 'initial'};
+
 	@media screen and (max-width: ${screenSizes.tablet.max}) {
 		margin-bottom: 20px;
+	}
+
+	& + & {
+		margin-top: 20px;
 	}
 `
 
@@ -47,6 +60,7 @@ const EventInfo = styled.div`
 export default ({
 	imgSrc,
 	imgAlt,
+	imgObjectPosition,
 	title,
 	date,
 	time,
@@ -56,7 +70,22 @@ export default ({
 }) => (
 	<EventCard>
 		<EventImageWrapper>
-			<EventImage src={imgSrc} alt={imgAlt} />
+			{Array.isArray(imgSrc) ? (
+				imgSrc.map((src, index) => (
+					<EventImage
+						key={imgAlt[index]}
+						src={src}
+						alt={imgAlt[index]}
+						imgObjectPosition={imgObjectPosition}
+					/>
+				))
+			) : (
+				<EventImage
+					src={imgSrc}
+					alt={imgAlt}
+					imgObjectPosition={imgObjectPosition}
+				/>
+			)}
 		</EventImageWrapper>
 		<EventTextWrapper>
 			<EventTitle>{title}</EventTitle>
@@ -64,7 +93,8 @@ export default ({
 				<p>{date}</p>
 				<p>{time}</p>
 				<p>
-					{location} <a href={locationLink}>(Map)</a>
+					{location}{' '}
+					{locationLink ? <a href={locationLink}>(Map)</a> : null}
 				</p>
 			</EventInfo>
 			{children}
