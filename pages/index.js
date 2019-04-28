@@ -30,7 +30,8 @@ const Sponsors = styled.div`
 	justify-content: space-between;
 
 	img {
-		width: 100px;
+		height: 40px;
+		padding: 5px;
 	}
 `
 
@@ -85,10 +86,11 @@ export default () => (
 				<SponsorsWrapper>
 					<h2>Our sponsors</h2>
 					<Sponsors>
-						<img src="/static/images/mental-health.svg" alt="" />
-						<img src="/static/images/mental-health.svg" alt="" />
-						<img src="/static/images/mental-health.svg" alt="" />
-						<img src="/static/images/mental-health.svg" alt="" />
+						<img src="/static/logos/Crebel.png" alt="" />
+						<img src="/static/logos/eu_flag.png" alt="" />
+						<img src="/static/logos/kth_hallen.png" alt="" />
+						<img src="/static/logos/sidekick.png" alt="" />
+						<img src="/static/logos/Smiling_logo.png" alt="" />
 					</Sponsors>
 				</SponsorsWrapper>
 			</Container>
