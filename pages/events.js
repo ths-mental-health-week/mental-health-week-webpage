@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Head from 'next/head'
 import Container from '../components/styles/Container'
 import Header from '../components/styles/Header'
+import Events from '../components/Events'
 
 const Content = styled.main`
 	background-color: ${({ theme }) => theme.colors.white};
@@ -11,11 +12,9 @@ const Content = styled.main`
 
 const Introduction = styled.div`
 	margin-top: 60px;
-	text-align: center;
 
 	h2 {
 		font-size: 30px;
-		text-align: center;
 	}
 `
 
@@ -32,9 +31,8 @@ export default () => (
 			<Container>
 				<Introduction>
 					<h2>Event Schedule</h2>
-					The events will be announced soon!
 				</Introduction>
-				{/* <Events /> */}
+				<Events />
 			</Container>
 		</Content>
 	</>
