@@ -24,7 +24,9 @@ const SponsorsWrapper = styled.div`
 	max-width: 700px;
 	margin: 0 auto;
 
-	padding: 0 40px;
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		max-width: 300px;
+	}
 
 	h2 {
 		text-align: center;
@@ -64,6 +66,10 @@ const SponsorImage = styled.div`
 	img {
 		width: 100%;
 	}
+`
+
+const ErasmusImage = styled.img`
+	width: 70% !important;
 `
 
 export default () => (
@@ -120,10 +126,16 @@ export default () => (
 					<h2>Our sponsors</h2>
 					<PrimarySponsors>
 						<SponsorImage>
-							<img src="/static/logos/Crebel.png" alt="" />
+							<img
+								src="/static/logos/Crebel.png"
+								alt="Crebel Consulting"
+							/>
 						</SponsorImage>
 						<SponsorImage>
-							<img src="/static/logos/eu_flag.png" alt="" />
+							<ErasmusImage
+								src="/static/logos/eu_flag.png"
+								alt="Erasmus"
+							/>
 						</SponsorImage>
 					</PrimarySponsors>
 					<SecondarySponsors>
