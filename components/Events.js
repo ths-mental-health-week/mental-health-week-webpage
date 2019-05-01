@@ -144,7 +144,7 @@ export default () => (
 		<Day>
 			<DayTitle>Wednesday</DayTitle>
 			<EventCard
-				imgSrc="/static/images/events/3%20-%20Annika%20Schu%CC%88llerqvist.png"
+				imgSrc="/static/images/events/3%20-%20Annika%20Schullerqvist.png"
 				imgAlt="Annika Schüllerqvist"
 				title="Breakfast Yoga with Annika Schüllerqvist"
 				date="Wednesday, May 15, 2019"
