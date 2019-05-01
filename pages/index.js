@@ -66,10 +66,10 @@ const SponsorImage = styled.div`
 	img {
 		width: 100%;
 	}
-`
 
-const ErasmusImage = styled.img`
-	width: 70% !important;
+	&.erasmus-image img {
+		width: 70%;
+	}
 `
 
 export default () => (
@@ -131,22 +131,31 @@ export default () => (
 								alt="Crebel Consulting"
 							/>
 						</SponsorImage>
-						<SponsorImage>
-							<ErasmusImage
-								src="/static/logos/eu_flag.png"
+						<SponsorImage className="erasmus-image">
+							<img
+								src="/static/logos/eu_flag.svg"
 								alt="Erasmus"
 							/>
 						</SponsorImage>
 					</PrimarySponsors>
 					<SecondarySponsors>
 						<SponsorImage>
-							<img src="/static/logos/kth_hallen.png" alt="" />
+							<img
+								src="/static/logos/kth_hallen.svg"
+								alt="KTH Hallen | Nordic Wellness"
+							/>
 						</SponsorImage>
 						<SponsorImage>
-							<img src="/static/logos/sidekick.png" alt="" />
+							<img
+								src="/static/logos/sidekick.svg"
+								alt="Sidekick Coffee"
+							/>
 						</SponsorImage>
 						<SponsorImage>
-							<img src="/static/logos/Smiling_logo.png" alt="" />
+							<img
+								src="/static/logos/Smiling_logo.png"
+								alt="Smiling"
+							/>
 						</SponsorImage>
 					</SecondarySponsors>
 				</SponsorsWrapper>
