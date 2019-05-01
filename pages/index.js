@@ -4,6 +4,7 @@ import Header from '../components/styles/Header'
 import SkewedLink from '../components/styles/SkewedLink'
 import Divider from '../components/styles/Divider'
 import TextImageRow from '../components/TextImageRow'
+import screenSizes from '../utils/screen-sizes'
 
 const Content = styled.main`
 	background-color: ${({ theme }) => theme.colors.white};
@@ -20,18 +21,48 @@ const Introduction = styled.div`
 `
 
 const SponsorsWrapper = styled.div`
+	max-width: 700px;
+	margin: 0 auto;
+
+	padding: 0 40px;
+
 	h2 {
 		text-align: center;
 	}
 `
 
-const Sponsors = styled.div`
+const PrimarySponsors = styled.div`
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-flow: dense;
+
+	margin: 50px 0;
+
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		grid-template-columns: 1fr;
+	}
+`
+
+const SecondarySponsors = styled.div`
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-flow: dense;
+
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		grid-template-columns: 1fr;
+	}
+`
+
+const SponsorImage = styled.div`
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 
 	img {
-		height: 40px;
-		padding: 5px;
+		width: 100%;
 	}
 `
 
@@ -83,15 +114,29 @@ export default () => (
 						the tools.
 					</p>
 				</TextImageRow>
+				<Divider />
+
 				<SponsorsWrapper>
 					<h2>Our sponsors</h2>
-					<Sponsors>
-						<img src="/static/logos/Crebel.png" alt="" />
-						<img src="/static/logos/eu_flag.png" alt="" />
-						<img src="/static/logos/kth_hallen.png" alt="" />
-						<img src="/static/logos/sidekick.png" alt="" />
-						<img src="/static/logos/Smiling_logo.png" alt="" />
-					</Sponsors>
+					<PrimarySponsors>
+						<SponsorImage>
+							<img src="/static/logos/Crebel.png" alt="" />
+						</SponsorImage>
+						<SponsorImage>
+							<img src="/static/logos/eu_flag.png" alt="" />
+						</SponsorImage>
+					</PrimarySponsors>
+					<SecondarySponsors>
+						<SponsorImage>
+							<img src="/static/logos/kth_hallen.png" alt="" />
+						</SponsorImage>
+						<SponsorImage>
+							<img src="/static/logos/sidekick.png" alt="" />
+						</SponsorImage>
+						<SponsorImage>
+							<img src="/static/logos/Smiling_logo.png" alt="" />
+						</SponsorImage>
+					</SecondarySponsors>
 				</SponsorsWrapper>
 			</Container>
 		</Content>
