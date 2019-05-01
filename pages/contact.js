@@ -164,6 +164,36 @@ export default () => (
 					<ContactForm />
 				</Column>
 			</ContactWrapper>
+
+			<ProfilesWrapper>
+				<h3>MWH Project Team</h3>
+				<Profiles>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="Name, Role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="Name, Role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="Name, Role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="Name, Role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="Name, Role"
+					/>
+					<ProfileCard
+						imgsrc="/static/images/mental-health.svg"
+						text="Name, Role"
+					/>
+				</Profiles>
+			</ProfilesWrapper>
 		</Container>
 
 		<ProfileFullWidthWrapper>

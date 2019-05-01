@@ -4,6 +4,7 @@ import Header from '../components/styles/Header'
 import SkewedLink from '../components/styles/SkewedLink'
 import Divider from '../components/styles/Divider'
 import TextImageRow from '../components/TextImageRow'
+import screenSizes from '../utils/screen-sizes'
 
 const Content = styled.main`
 	background-color: ${({ theme }) => theme.colors.white};
@@ -16,6 +17,58 @@ const Introduction = styled.div`
 
 	h2 {
 		text-align: center;
+	}
+`
+
+const SponsorsWrapper = styled.div`
+	max-width: 700px;
+	margin: 0 auto;
+
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		max-width: 300px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+`
+
+const PrimarySponsors = styled.div`
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-flow: dense;
+
+	margin: 50px 0;
+
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		grid-template-columns: 1fr;
+	}
+`
+
+const SecondarySponsors = styled.div`
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-flow: dense;
+
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		grid-template-columns: 1fr;
+	}
+`
+
+const SponsorImage = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width: 100%;
+	}
+
+	&.erasmus-image img {
+		width: 70%;
 	}
 `
 
@@ -67,6 +120,45 @@ export default () => (
 						the tools.
 					</p>
 				</TextImageRow>
+				<Divider />
+
+				<SponsorsWrapper>
+					<h2>Our sponsors</h2>
+					<PrimarySponsors>
+						<SponsorImage>
+							<img
+								src="/static/logos/Crebel.png"
+								alt="Crebel Consulting"
+							/>
+						</SponsorImage>
+						<SponsorImage className="erasmus-image">
+							<img
+								src="/static/logos/eu_flag.svg"
+								alt="Erasmus"
+							/>
+						</SponsorImage>
+					</PrimarySponsors>
+					<SecondarySponsors>
+						<SponsorImage>
+							<img
+								src="/static/logos/kth_hallen.svg"
+								alt="KTH Hallen | Nordic Wellness"
+							/>
+						</SponsorImage>
+						<SponsorImage>
+							<img
+								src="/static/logos/sidekick.svg"
+								alt="Sidekick Coffee"
+							/>
+						</SponsorImage>
+						<SponsorImage>
+							<img
+								src="/static/logos/Smiling_logo.png"
+								alt="Smiling"
+							/>
+						</SponsorImage>
+					</SecondarySponsors>
+				</SponsorsWrapper>
 			</Container>
 		</Content>
 	</>
