@@ -153,7 +153,7 @@ export default () => (
 						</SponsorImage>
 						<SponsorImage>
 							<img
-								src="/static/logos/Smiling_logo.png"
+								src="/static/logos/Smiling color.png"
 								alt="Smiling"
 							/>
 						</SponsorImage>
