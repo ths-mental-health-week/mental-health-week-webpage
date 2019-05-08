@@ -54,7 +54,11 @@ export default () => (
 					the first 30 to attend.
 				</p>
 
-				<a href="https://forms.gle/fUuwFMmgPeMYCiAY9">
+				<a
+					href="https://forms.gle/fUuwFMmgPeMYCiAY9"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Link to Register
 				</a>
 			</EventCard>
@@ -87,19 +91,23 @@ export default () => (
 				<p>
 					As a professional lecturer, famous for his personal and
 					engaging approach, André strives for presenting high quality
-					lectures based on science. His lvoordade lectures are not
-					just famous for being educating and inspiring, but also for
-					their insights, humor and high quality. André also makes
-					podcasts and is the creator of the popular podcast
-					‘’Stresskolan’’ where he has interviewed some of the most
-					famous doctors, psychologists and scientists about stress
-					and how to handle it.
+					lectures based on science. His praised lectures are not just
+					famous for being educating and inspiring, but also for their
+					insights, humor and high quality. André also makes podcasts
+					and is the creator of the popular podcast
+					&quot;Stresskolan&quot; where he has interviewed some of the
+					most famous doctors, psychologists and scientists about
+					stress and how to handle it.
 				</p>
 				<p>
 					This lecture will be held in Swedish. Lunch is provided for
 					the first 70 to attend.
 				</p>
-				<a href="https://forms.gle/JhC7FYHmT2KUmG827">
+				<a
+					href="https://forms.gle/JhC7FYHmT2KUmG827"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Link to Register
 				</a>
 			</EventCard>
@@ -136,7 +144,11 @@ export default () => (
 					the first 90 to attend.
 				</p>
 
-				<a href="https://forms.gle/FWYWeKZQ2Rum9vbP7">
+				<a
+					href="https://forms.gle/FWYWeKZQ2Rum9vbP7"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Link to Register
 				</a>
 			</EventCard>
@@ -167,7 +179,11 @@ export default () => (
 					the first 30 to attend.
 				</p>
 
-				<a href="https://forms.gle/D63e78JxMewaJVrbA">
+				<a
+					href="https://forms.gle/D63e78JxMewaJVrbA"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Link to Register
 				</a>
 			</EventCard>
@@ -199,7 +215,11 @@ export default () => (
 					the first 90 to attend.
 				</p>
 
-				<a href="https://forms.gle/vFc6SDqDGSHwFkdH8">
+				<a
+					href="https://forms.gle/vFc6SDqDGSHwFkdH8"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Link to Register
 				</a>
 			</EventCard>
@@ -231,7 +251,11 @@ export default () => (
 					the first 90 to attend.
 				</p>
 
-				<a href="https://forms.gle/z4JUoSkpQiMuNTCk6">
+				<a
+					href="https://forms.gle/z4JUoSkpQiMuNTCk6"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Link to Register
 				</a>
 			</EventCard>
@@ -273,7 +297,11 @@ export default () => (
 				</p>
 				<p>Sponsored by Erasmus and Crebel Consulting</p>
 
-				<a href="https://forms.gle/3J9m81K43tkK7ca89">
+				<a
+					href="https://forms.gle/3J9m81K43tkK7ca89"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Link to Register
 				</a>
 			</EventCard>

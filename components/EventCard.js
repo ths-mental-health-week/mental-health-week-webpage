@@ -39,6 +39,11 @@ const EventImage = styled.img`
 		margin-bottom: 20px;
 	}
 
+	@media screen and (max-width: ${screenSizes.smallPhone.max}) {
+		height: calc(100vw - 95px);
+		width: calc(100vw - 95px);
+	}
+
 	& + & {
 		margin-top: 20px;
 	}
