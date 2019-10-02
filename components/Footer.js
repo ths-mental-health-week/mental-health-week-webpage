@@ -120,7 +120,7 @@ export default () => (
 						</a>
 					</p>
 					<p>
-						Follow us on social media for updates and anouncements!
+						Follow us on social media for updates and announcements!
 					</p>
 					<IconWrapper>
 						<Icon href={contactInfo.facebook}>
