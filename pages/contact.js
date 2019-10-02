@@ -169,7 +169,7 @@ export default () => (
 		<ProfileFullWidthWrapper>
 			<Container>
 				<ProfilesWrapper>
-					<h2>MWH Project Team</h2>
+					<h2>MWH 2019 Project Team</h2>
 					<Profiles>
 						<ProfileCard
 							imgSrc="/static/images/profile-pictures/Anna%20Strandberg-min.jpeg"
