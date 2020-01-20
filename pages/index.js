@@ -87,20 +87,6 @@ export default () => (
 					</p>
 				</Introduction>
 				<Divider />
-				<Introduction>
-					<h2>What is Mental Health Week?</h2>
-					<p>
-						We believe that solutions happen when we start sharing
-						what’s going on in our minds to friends, family and even
-						strangers. Mental Health Week is the place where you can
-						share your story of mental health challenges and learn
-						without any fear or restriction. A series of lectures
-						and activities on a different theme every day, where
-						everyone is welcome whether you are seeking help or if
-						you are curious about Mental Health issues.
-					</p>
-				</Introduction>
-				<Divider />
 				<TextImageRow
 					imgSrc="/static/images/calendar.svg"
 					imgAlt="Calendar icon"
