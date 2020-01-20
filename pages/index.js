@@ -80,12 +80,12 @@ export default () => (
 		/>
 		<Content>
 			<Container>
-				<Recruitment>
+				<Introduction>
 					<h2>We are now recruiting!</h2>
 					<p>
 						More details coming soon!
 					</p>
-				</Recruitment>
+				</Introduction>
 				<Divider />
 				<Introduction>
 					<h2>What is Mental Health Week?</h2>
