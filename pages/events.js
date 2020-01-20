@@ -30,7 +30,7 @@ export default () => (
 		<Content>
 			<Container>
 				<Introduction>
-					<h2>Event Schedule</h2>
+					<h2>Event Schedule 2019</h2>
 				</Introduction>
 				<Events />
 			</Container>
