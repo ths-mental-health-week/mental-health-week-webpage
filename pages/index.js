@@ -80,10 +80,26 @@ export default () => (
 		/>
 		<Content>
 			<Container>
-				<Introduction>
+				<Recruitment>
 					<h2>We are now recruiting!</h2>
 					<p>
-						More details coming soon!
+						Do you want to be a part of Mental Health Week 2020?
+						Now is your chance to make a difference! 
+						
+					</p>
+				</Recruitment>
+				<Divider />
+				<Introduction>
+					<h2>What is Mental Health Week?</h2>
+					<p>
+						We believe that solutions happen when we start sharing
+						what’s going on in our minds to friends, family and even
+						strangers. Mental Health Week is the place where you can
+						share your story of mental health challenges and learn
+						without any fear or restriction. A series of lectures
+						and activities on a different theme every day, where
+						everyone is welcome whether you are seeking help or if
+						you are curious about Mental Health issues.
 					</p>
 				</Introduction>
 				<Divider />
