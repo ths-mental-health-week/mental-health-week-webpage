@@ -87,7 +87,11 @@ export default () => (
 		<Content>
 			<Container>
 				<Recruitment>
-					<h2>We are now recruiting!</h2>
+					
+				</Recruitment>
+				
+				<Introduction>
+						<h2>We are now recruiting!</h2>
 					<p>
 						Do you want to be a part of Mental Health Week 2020?
 						Join us and make a difference! 
@@ -95,9 +99,7 @@ export default () => (
 						<a href="https://forms.gle/78w1rqQZcdQ1dm3X9">Join Mental Health Week 2020!</a>
 						
 					</p>
-				</Recruitment>
 				<Divider />
-				<Introduction>
 					<h2>What is Mental Health Week?</h2>
 					<p>
 						We believe that solutions happen when we start sharing
