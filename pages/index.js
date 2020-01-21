@@ -18,6 +18,8 @@ const Introduction = styled.div`
 	h2 {
 		text-align: center;
 	}
+
+
 const Recruitment = styled.div`
 	margin-top: 60px;
 
