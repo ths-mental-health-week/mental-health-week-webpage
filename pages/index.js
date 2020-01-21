@@ -99,10 +99,10 @@ export default () => (
 					<p>
 						Do you want to be a part of Mental Health Week 2020?
 						Join us and make a difference! 
-						Click below to find our recruitment form. 
-						<p>
-						<a href="https://forms.gle/78w1rqQZcdQ1dm3X9">Join Mental Health Week 2020!</a>
-						</p>
+						Click below to find our recruitment form.<br />
+						<SkewedLink href="https://forms.gle/78w1rqQZcdQ1dm3X9">
+							Join Mental Health Week 2020!
+						</SkewedLink>
 					</p>
 				</Recruitment>
 				<Divider />
