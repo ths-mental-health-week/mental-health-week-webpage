@@ -24,8 +24,13 @@ const Introduction = styled.div`
 const Recruitment = styled.div`
 	margin-top: 60px;
 
-	h2 {
+	h1 {
 		text-align: center;
+	}
+	a {
+		text-align: center;
+		background-color: ${({ theme }) => theme.colors.white};
+		color: ${({ theme }) => theme.colors.secondary};
 	}
 `
 
@@ -91,14 +96,13 @@ export default () => (
 			<Container>
 				<Recruitment>
 					<h1>We are now recruiting!</h1><br />
-					<h2>Do you want to be a part of Mental Health Week 2020?</h2>
 					<p>
+						Do you want to be a part of Mental Health Week 2020?
 						Join us and make a difference! 
 						Click below to find our recruitment form. 
 						<p>
 						<a href="https://forms.gle/78w1rqQZcdQ1dm3X9">Join Mental Health Week 2020!</a>
 						</p>
-						
 					</p>
 				</Recruitment>
 				<Divider />
