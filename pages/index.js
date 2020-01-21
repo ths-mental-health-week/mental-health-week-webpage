@@ -18,6 +18,7 @@ const Introduction = styled.div`
 	h2 {
 		text-align: center;
 	}
+`
 
 
 const Recruitment = styled.div`
