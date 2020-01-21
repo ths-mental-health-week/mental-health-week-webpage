@@ -98,7 +98,7 @@ export default () => (
 						Do you want to be a part of Mental Health Week 2020?
 						Join us and make a difference! 
 						Click below to find our recruitment form.<br /> <br />
-						<SkewedLink href="https://forms.gle/78w1rqQZcdQ1dm3X9">
+						<SkewedLink href="https://forms.gle/78w1rqQZcdQ1dm3X9" marginRight>
 							Join Mental Health Week 2020!
 						</SkewedLink>
 					</p>
