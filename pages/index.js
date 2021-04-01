@@ -20,7 +20,6 @@ const Introduction = styled.div`
 	}
 `
 
-
 const Recruitment = styled.div`
 	margin-top: 60px;
 
@@ -95,11 +94,15 @@ export default () => (
 				<Recruitment>
 					<h1>We are now recruiting!</h1>
 					<p>
-						Do you want to be a part of Mental Health Week 2020?
-						Join us and make a difference! 
-						Click below to find our recruitment form.<br /> <br />
-						<SkewedLink href="https://forms.gle/78w1rqQZcdQ1dm3X9" marginRight>
-							Join Mental Health Week 2020!
+						Do you want to be a part of Mental Health Week 2021?
+						Join us and make a difference! Click below to find our
+						recruitment form.
+						<br /> <br />
+						<SkewedLink
+							href="https://forms.gle/ziJRu5P7cM7hnMdr5"
+							marginRight
+						>
+							Join Mental Health Week 2021!
 						</SkewedLink>
 					</p>
 				</Recruitment>
