@@ -168,7 +168,7 @@ export default () => (
 								<a>Privacy Policy</a>
 							</Link>
 						</p>
-						<p>© 2019 THS Mental Health Week</p>
+						<p>© 2019-2021 THS Mental Health Week</p>
 					</Disclaimer>
 				</FlexColumn>
 			</FlexWrapper>
