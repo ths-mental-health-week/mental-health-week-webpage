@@ -108,7 +108,7 @@ export default () => (
 					<h2>Mental Health Week</h2>
 					<p>
 						Mental Health Week is a project week which aims to
-						educate and inform students about mental health.
+						educate students about mental health.
 					</p>
 				</FlexColumn>
 				<FlexColumn>
