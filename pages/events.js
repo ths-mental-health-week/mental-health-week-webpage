@@ -21,7 +21,7 @@ const Introduction = styled.div`
 export default () => (
 	<>
 		<Head>
-			<title key="title">Events 2019 | Mental Health Week</title>
+			<title key="title">Events 2021 | Mental Health Week</title>
 		</Head>
 		<Header
 			title="Mental Health Week"
@@ -30,7 +30,7 @@ export default () => (
 		<Content>
 			<Container>
 				<Introduction>
-					<h2>Event Schedule 2019</h2>
+					<h2>Event Schedule 2021 - To Be Announced!</h2>
 				</Introduction>
 				<Events />
 			</Container>

@@ -1,3 +1,4 @@
+/*
 import styled from 'styled-components'
 import screenSizes from '../utils/screen-sizes'
 
@@ -106,3 +107,4 @@ export default ({
 		</EventTextWrapper>
 	</EventCard>
 )
+*/
