@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 import screenSizes from '../utils/screen-sizes'
+import ClockIcon from './icons/Clock'
+import CalendarIcon from './icons/Calendar'
+import SwedishFlagIcon from './icons/SwedishFlag'
+import UKFlagIcon from './icons/UKFlag'
 
 const EventCard = styled.div`
 	background-color: ${({ theme }) => theme.colors.lightGrey};
@@ -25,7 +29,11 @@ const EventImageWrapper = styled.div`
 	}
 `
 
-const EventTextWrapper = styled.div``
+const EventTextWrapper = styled.div`
+	b {
+		font-weight: 800;
+	}
+`
 
 const EventImage = styled.img`
 	height: 300px;
@@ -49,17 +57,23 @@ const EventImage = styled.img`
 	}
 `
 
+const EventTitleWrapper = styled.div`
+	display: flex;
+	justify-content: space-between;
+`
+
 const EventTitle = styled.h3`
 	font-weight: 800;
 	margin-top: 0;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.25rem;
+	padding-right: 0.5rem;
 	font-size: 1.5rem;
 `
 
 const EventPresenter = styled.h3`
 	font-weight: 600;
 	margin-top: 0;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	font-size: 1.25rem;
 `
 
@@ -67,6 +81,9 @@ const EventInfo = styled.div`
 	font-weight: 600;
 	p {
 		margin: 0;
+	}
+	span {
+		margin-left: 0.5rem;
 	}
 `
 
@@ -76,6 +93,7 @@ export default ({
 	imgObjectPosition,
 	title,
 	presenter,
+	language,
 	date,
 	time,
 	location,
@@ -102,12 +120,24 @@ export default ({
 			)}
 		</EventImageWrapper>
 		<EventTextWrapper>
-			<EventTitle>{title}</EventTitle>
+			<EventTitleWrapper>
+				<EventTitle>{title}</EventTitle>
+				<span>
+					Language:{' '}
+					<b style={{ marginRight: '0.5rem' }}>{language}</b>
+					{language === 'SVE' && <SwedishFlagIcon size="1.5rem" />}
+					{language === 'ENG' && <UKFlagIcon size="1.5rem" />}
+				</span>
+			</EventTitleWrapper>
 			<EventPresenter>{presenter}</EventPresenter>
 			<EventInfo>
-				<p>{date}</p>
 				<p>
-					<b>{time}</b>
+					<CalendarIcon size="1rem" />
+					<span>{date}</span>
+				</p>
+				<p>
+					<ClockIcon size="1rem" />
+					<span>{time}</span>
 				</p>
 				<p>
 					{location}{' '}

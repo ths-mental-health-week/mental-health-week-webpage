@@ -140,6 +140,10 @@ export default () => (
 								title="catkuro"
 							>
 								catkuro
+							</a>
+							{', '}
+							<a href="https://www.freepik.com/" title="freepik">
+								freepik
 							</a>{' '}
 							and{' '}
 							<a
