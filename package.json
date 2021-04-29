@@ -1,6 +1,7 @@
 {
 	"name": "mental-health-week-webpage",
 	"scripts": {
+		"dev": "next dev",
 		"start": "next",
 		"build": "next build",
 		"export": "next export",
