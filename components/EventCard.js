@@ -121,7 +121,7 @@ export default ({
 		</EventImageWrapper>
 		<EventTextWrapper>
 			<EventTitleWrapper>
-				<EventTitle>{title}</EventTitle>
+				<EventTitle>&quot;{title}&quot;</EventTitle>
 				<span>
 					Language:{' '}
 					<b style={{ marginRight: '0.5rem' }}>{language}</b>

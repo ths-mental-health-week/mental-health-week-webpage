@@ -23,7 +23,40 @@ export default () => (
 	<EventsWrapper>
 		<Day>
 			<DayTitle>Monday</DayTitle>
-			To Be Announced!
+			<EventCard
+				imgSrc="/static/images/events/Tilia.jpg"
+				imgAlt="Caroline Meijer (Team Tilia)"
+				title="Hur vet jag om det är psykisk (o)hälsa eller 'bara' livet som gör ont?"
+				presenter="Caroline Meijer (Team Tilia)"
+				language="SVE"
+				date="Monday, May 3, 2021"
+				time="12:00 - 13:00"
+				location=""
+				locationLink=""
+			>
+				<p>
+					Föreläsningen syftar till att ge ökad kunskap likväl verktyg
+					för psykisk hälsa. Vi reder i begreppen psykisk hälsa,
+					ohälsa och sjukdom och lyfter den vanligt förekommande
+					frågan &quot;Hur vet jag om det är psykisk ohälsa eller
+					&#39;bara livet&#39; som gör ont?&quot;
+				</p>
+				<p>
+					Carro är genusvetare och ungdomscoach. YAM (Youth Aware of
+					Mental health)-instruktör vid Karolinska Institutet,
+					Nationellt centrum för suicidforskning och prevention. På
+					Team Tilia, förutom att vara samordnare för stöd online är
+					Carro föreläsare samt volontär i stödchatten och under
+					lägerverksamhet.
+				</p>
+
+				<p>
+					Team Tilia är en ideell organisations som sedan 2012 arbetat
+					för unga och unga vuxnas psykiska hälsa. Tilia erbjuder
+					medmänskligt stöd för alla som behöver någon att prata med
+					365 dagar om året.
+				</p>
+			</EventCard>
 			{/* <EventCard
 				imgSrc=""
 				imgAlt=""
@@ -40,7 +73,7 @@ export default () => (
 			<EventCard
 				imgSrc="/static/images/events/Maggan Hägglund.jpg"
 				imgAlt="Maggan Hägglund"
-				title='"Drunka inte i dina känslor"'
+				title="Drunka inte i dina känslor"
 				presenter="Maggan Hägglund"
 				language="SVE"
 				date="Tuesday, May 4, 2021"
@@ -75,7 +108,7 @@ export default () => (
 			<EventCard
 				imgSrc="/static/images/events/Yannick Klein.jpg"
 				imgAlt="Yannick Klein"
-				title='"The role of natural environments in promoting student wellbeing during covid 19"'
+				title="The role of natural environments in promoting student wellbeing during covid 19"
 				presenter="Yannick Klein"
 				language="ENG"
 				date="Tuesday, May 4, 2021"
@@ -121,7 +154,7 @@ export default () => (
 			<EventCard
 				imgSrc="/static/images/events/Rebecka Pershagen.jpg"
 				imgAlt="Rebecka Pershagen"
-				title='"Nobody joins a cult - they join a good thing"'
+				title="Nobody joins a cult - they join a good thing"
 				presenter="Rebecka Pershagen"
 				language="ENG"
 				date="Wednesday, May 5, 2021"
@@ -173,7 +206,7 @@ export default () => (
 			<EventCard
 				imgSrc="/static/images/events/Emanuel Nilsson.jpg"
 				imgAlt="Emanuel Nilsson"
-				title='"To perform and focus on your well-being"'
+				title="To perform and focus on your well-being"
 				presenter="Emanuel Nilsson"
 				language="ENG"
 				date="Thursday, May 6, 2021"
@@ -200,7 +233,7 @@ export default () => (
 			<EventCard
 				imgSrc="/static/images/events/suicide zero.jpeg"
 				imgAlt="Maria Lorentzon (Suicide Zero)"
-				title='"Dare to Ask"'
+				title="Dare to Ask"
 				presenter="Maria Lorentzon (Suicide Zero)"
 				language="ENG"
 				date="Friday, May 7, 2021"
