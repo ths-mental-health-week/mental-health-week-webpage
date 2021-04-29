@@ -1,4 +1,3 @@
-/*
 import styled from 'styled-components'
 import screenSizes from '../utils/screen-sizes'
 
@@ -51,13 +50,21 @@ const EventImage = styled.img`
 `
 
 const EventTitle = styled.h3`
+	font-weight: 800;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-size: 1.5rem;
+`
+
+const EventPresenter = styled.h3`
 	font-weight: 600;
 	margin-top: 0;
-	margin-bottom: 16px;
-	font-size: 25px;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
 `
 
 const EventInfo = styled.div`
+	font-weight: 600;
 	p {
 		margin: 0;
 	}
@@ -68,6 +75,7 @@ export default ({
 	imgAlt,
 	imgObjectPosition,
 	title,
+	presenter,
 	date,
 	time,
 	location,
@@ -95,9 +103,12 @@ export default ({
 		</EventImageWrapper>
 		<EventTextWrapper>
 			<EventTitle>{title}</EventTitle>
+			<EventPresenter>{presenter}</EventPresenter>
 			<EventInfo>
 				<p>{date}</p>
-				<p>{time}</p>
+				<p>
+					<b>{time}</b>
+				</p>
 				<p>
 					{location}{' '}
 					{locationLink ? <a href={locationLink}>(Map)</a> : null}
@@ -107,4 +118,3 @@ export default ({
 		</EventTextWrapper>
 	</EventCard>
 )
-*/
