@@ -96,7 +96,6 @@ export default ({
 	language,
 	date,
 	time,
-	location,
 	locationLink,
 	children
 }) => (
@@ -139,10 +138,7 @@ export default ({
 					<ClockIcon size="1rem" />
 					<span>{time}</span>
 				</p>
-				<p>
-					{location}{' '}
-					{locationLink ? <a href={locationLink}>(Map)</a> : null}
-				</p>
+				<p>{locationLink ? <a href={locationLink}>(Map)</a> : null}</p>
 			</EventInfo>
 			{children}
 		</EventTextWrapper>

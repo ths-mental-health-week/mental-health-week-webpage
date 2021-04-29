@@ -31,7 +31,6 @@ export default () => (
 				language="SVE"
 				date="Monday, May 3, 2021"
 				time="12:00 - 13:00"
-				location=""
 				locationLink=""
 			>
 				<p>
@@ -57,16 +56,6 @@ export default () => (
 					365 dagar om året.
 				</p>
 			</EventCard>
-			{/* <EventCard
-				imgSrc=""
-				imgAlt=""
-				title="Hur vet jag att det är en mental sjukdom eller 'bara' mitt liv som är jobbigt - Tilia"
-				date="Monday, May 3, 2021"
-				time="08:30 - 09:30"
-				location=""
-				locationLink=""
-			>
-			</EventCard> */}
 		</Day>
 		<Day>
 			<DayTitle>Tuesday</DayTitle>
@@ -78,7 +67,6 @@ export default () => (
 				language="SVE"
 				date="Tuesday, May 4, 2021"
 				time="12:00 - 13:00"
-				location=""
 				locationLink=""
 			>
 				<p>- lär dig att utnyttja din högkänslighet effektivt</p>
@@ -113,7 +101,6 @@ export default () => (
 				language="ENG"
 				date="Tuesday, May 4, 2021"
 				time="14:30 - 15:15"
-				location=""
 				locationLink=""
 			>
 				<p>
@@ -159,7 +146,6 @@ export default () => (
 				language="ENG"
 				date="Wednesday, May 5, 2021"
 				time="12:00 - 13:00"
-				location=""
 				locationLink=""
 			>
 				<p>
@@ -211,7 +197,6 @@ export default () => (
 				language="ENG"
 				date="Thursday, May 6, 2021"
 				time="12:00 - 13:00"
-				location=""
 				locationLink=""
 			>
 				<p>
@@ -238,7 +223,6 @@ export default () => (
 				language="ENG"
 				date="Friday, May 7, 2021"
 				time="12:00 - 13:00"
-				location=""
 				locationLink=""
 			>
 				<p>
