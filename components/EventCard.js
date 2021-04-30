@@ -85,6 +85,9 @@ const EventInfo = styled.div`
 	span {
 		margin-left: 0.5rem;
 	}
+	a {
+		font-weight: 800;
+	}
 `
 
 export default ({
@@ -96,7 +99,7 @@ export default ({
 	language,
 	date,
 	time,
-	locationLink,
+	link,
 	children
 }) => (
 	<EventCard>
@@ -138,7 +141,7 @@ export default ({
 					<ClockIcon size="1rem" />
 					<span>{time}</span>
 				</p>
-				<p>{locationLink ? <a href={locationLink}>(Map)</a> : null}</p>
+				<p>{link ? <a href={link}>Register</a> : null}</p>
 			</EventInfo>
 			{children}
 		</EventTextWrapper>

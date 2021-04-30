@@ -24,6 +24,38 @@ export default () => (
 		<Day>
 			<DayTitle>Monday</DayTitle>
 			<EventCard
+				imgSrc="/static/images/events/Gabi.jpg"
+				imgAlt="Gabi"
+				title="Morning Yoga with Gabi"
+				presenter="Gabi"
+				language="ENG"
+				date="Monday, May 3, 2021"
+				time="9:00 - 10:00"
+				link="https://www.eventbrite.com/e/morning-yoga-with-gabi-tickets-152981209917"
+			>
+				<p>
+					Breath, move and feel alive! Gabi’s classes create awareness
+					by listening into the breath and letting it flow easily
+					through the body while moving through yoga poses. Creating
+					peace from deep within.
+				</p>
+
+				<p>
+					Gabi loves to make people feel comfortable in their own
+					bodies experiencing a happier, fuller and more peaceful
+					state of being through Yoga! Playfulness, movement and
+					breath awakens mindfulness. Relaxed muscles, open flow of
+					energy throughout the whole body and spirit!
+				</p>
+
+				<p>
+					We will practice a relaxing Yoga flow. Removing any stagnant
+					blockages, big focus on releasing lower back and shoulder
+					tension. Bringing new vital energy into our bodies and
+					becoming the happiest versions of ourselves!
+				</p>
+			</EventCard>
+			<EventCard
 				imgSrc="/static/images/events/Tilia.jpg"
 				imgAlt="Caroline Meijer (Team Tilia)"
 				title="Hur vet jag om det är psykisk (o)hälsa eller 'bara' livet som gör ont?"
@@ -31,7 +63,7 @@ export default () => (
 				language="SVE"
 				date="Monday, May 3, 2021"
 				time="12:00 - 13:00"
-				locationLink=""
+				link="https://www.eventbrite.com/e/hur-vet-jag-om-det-ar-psykisk-ohalsa-eller-bara-livet-som-gor-ont-tickets-152904179517"
 			>
 				<p>
 					Föreläsningen syftar till att ge ökad kunskap likväl verktyg
@@ -67,7 +99,7 @@ export default () => (
 				language="SVE"
 				date="Tuesday, May 4, 2021"
 				time="12:00 - 13:00"
-				locationLink=""
+				link="https://www.eventbrite.com/e/drunka-inte-i-dina-kanslor-tickets-152906815401"
 			>
 				<p>- lär dig att utnyttja din högkänslighet effektivt</p>
 
@@ -101,7 +133,7 @@ export default () => (
 				language="ENG"
 				date="Tuesday, May 4, 2021"
 				time="14:30 - 15:15"
-				locationLink=""
+				link="https://www.eventbrite.com/e/the-role-of-natural-environments-in-promoting-wellbeing-during-covid-19-tickets-152908201547"
 			>
 				<p>
 					With universities teaching online and remote studies,
@@ -146,7 +178,7 @@ export default () => (
 				language="ENG"
 				date="Wednesday, May 5, 2021"
 				time="12:00 - 13:00"
-				locationLink=""
+				link="https://www.eventbrite.com/e/nobody-joins-a-cult-they-join-a-good-thing-tickets-152908412177"
 			>
 				<p>
 					<i>
@@ -197,7 +229,7 @@ export default () => (
 				language="ENG"
 				date="Thursday, May 6, 2021"
 				time="12:00 - 13:00"
-				locationLink=""
+				link="https://www.eventbrite.com/e/to-perform-and-focus-on-your-well-being-tickets-152909192511"
 			>
 				<p>
 					Welcome to a lecture on stress. Emanuel Nilsson talks about
@@ -223,7 +255,7 @@ export default () => (
 				language="ENG"
 				date="Friday, May 7, 2021"
 				time="12:00 - 13:00"
-				locationLink=""
+				link="https://www.eventbrite.com/e/dare-to-ask-tickets-152909377063"
 			>
 				<p>
 					Suicide Zero started in 2013 and is a non-profit
