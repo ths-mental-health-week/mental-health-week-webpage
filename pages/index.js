@@ -86,24 +86,20 @@ const SponsorImage = styled.div`
 export default () => (
 	<>
 		<Header
-			title="Mental Health Week"
+			title="Mental Health Week 2021"
+			date="Monday 3rd of May - Friday 7th of May"
 			secondaryTitle="Your mental health matters"
 		/>
 		<Content>
 			<Container>
 				<Recruitment>
-					<h1>We are now recruiting!</h1>
+					<h1>We are about to kick off!</h1>
 					<p>
-						Do you want to be a part of Mental Health Week 2021?
-						Join us and make a difference! Click below to find our
-						recruitment form.
-						<br /> <br />
-						<SkewedLink
-							href="https://forms.gle/ziJRu5P7cM7hnMdr5"
-							marginRight
-						>
-							Join Mental Health Week 2021!
-						</SkewedLink>
+						THS Mental Health Week is about to kick off for 2021! We
+						have five days of events ready to go starting on Monday
+						the 3rd of May. Head over to the{' '}
+						<a href="/events">events page</a> to learn more and
+						register.
 					</p>
 				</Recruitment>
 				<Divider />

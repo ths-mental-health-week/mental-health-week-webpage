@@ -22,7 +22,7 @@ const DayTitle = styled.h2`
 export default () => (
 	<EventsWrapper>
 		<Day>
-			<DayTitle>Monday</DayTitle>
+			<DayTitle>Monday - May 3rd</DayTitle>
 			<EventCard
 				imgSrc="/static/images/events/Gabi.jpg"
 				imgAlt="Gabi"
@@ -90,7 +90,7 @@ export default () => (
 			</EventCard>
 		</Day>
 		<Day>
-			<DayTitle>Tuesday</DayTitle>
+			<DayTitle>Tuesday - May 4th</DayTitle>
 			<EventCard
 				imgSrc="/static/images/events/Maggan Hägglund.jpg"
 				imgAlt="Maggan Hägglund"
@@ -169,7 +169,7 @@ export default () => (
 			</EventCard>
 		</Day>
 		<Day>
-			<DayTitle>Wednesday</DayTitle>
+			<DayTitle>Wednesday - May 5th</DayTitle>
 			<EventCard
 				imgSrc="/static/images/events/Rebecka Pershagen.jpg"
 				imgAlt="Rebecka Pershagen"
@@ -220,7 +220,7 @@ export default () => (
 			</EventCard>
 		</Day>
 		<Day>
-			<DayTitle>Thursday</DayTitle>
+			<DayTitle>Thursday - May 6th</DayTitle>
 			<EventCard
 				imgSrc="/static/images/events/Emanuel Nilsson.jpg"
 				imgAlt="Emanuel Nilsson"
@@ -246,7 +246,7 @@ export default () => (
 			</EventCard>
 		</Day>
 		<Day>
-			<DayTitle>Friday</DayTitle>
+			<DayTitle>Friday - May 7th</DayTitle>
 			<EventCard
 				imgSrc="/static/images/events/suicide zero.jpeg"
 				imgAlt="Maria Lorentzon (Suicide Zero)"

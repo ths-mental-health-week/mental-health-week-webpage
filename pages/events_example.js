@@ -25,6 +25,7 @@ export default () => (
 		</Head>
 		<Header
 			title="Mental Health Week"
+			date="Monday 3rd of May - Friday 7th of May"
 			secondaryTitle="Your mental health matters"
 		/>
 		<Content>

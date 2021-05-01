@@ -45,6 +45,19 @@ const Title = styled.h1`
 	}
 `
 
+const Date = styled.h3`
+	margin: 0;
+	margin-top: 1rem;
+
+	font-size: 20px;
+	font-weight: 400;
+	font-style: italic;
+
+	@media screen and (max-width: ${screenSizes.laptop.max}) {
+		font-size: 18px;
+	}
+`
+
 const Slogan = styled.h2`
 	font-weight: 400;
 	margin: 0;
@@ -68,13 +81,14 @@ const Logo = styled.img`
 	}
 `
 
-const Header = ({ title, secondaryTitle, logo }) => (
+const Header = ({ title, date, secondaryTitle, logo }) => (
 	<Wrapper>
 		<SkewBackground>
 			<Straightener>
 				<TextWrapper>
 					<Title>{title}</Title>
 					{secondaryTitle ? <Slogan>{secondaryTitle}</Slogan> : null}
+					{date ? <Date>{date}</Date> : null}
 				</TextWrapper>
 				{logo ? <Logo src={logo} /> : null}
 			</Straightener>
