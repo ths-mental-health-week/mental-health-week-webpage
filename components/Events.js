@@ -128,12 +128,11 @@ export default () => (
 			<EventCard
 				imgSrc="/static/images/events/Yannick Klein.jpg"
 				imgAlt="Yannick Klein"
-				title="The role of natural environments in promoting student wellbeing during covid 19"
+				title="[CANCELED] The role of natural environments in promoting student wellbeing during covid 19"
 				presenter="Yannick Klein"
 				language="ENG"
 				date="Tuesday, May 4, 2021"
 				time="14:30 - 15:15"
-				link="https://www.eventbrite.com/e/the-role-of-natural-environments-in-promoting-wellbeing-during-covid-19-tickets-152908201547"
 			>
 				<p>
 					With universities teaching online and remote studies,
