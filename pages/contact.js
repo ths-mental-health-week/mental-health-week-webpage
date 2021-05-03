@@ -74,6 +74,7 @@ const Icon = styled.a`
 	}
 `
 
+/*
 const ProfilesWrapper = styled.div`
 	h2 {
 		margin: 40px 0;
@@ -134,6 +135,7 @@ const ProfileFullWidthWrapper = styled.div`
 	padding-top: 1px;
 	padding-bottom: 50px;
 `
+*/
 
 export default () => (
 	<>
@@ -165,51 +167,5 @@ export default () => (
 				</Column>
 			</ContactWrapper>
 		</Container>
-
-		<ProfileFullWidthWrapper>
-			<Container>
-				<ProfilesWrapper>
-					<h2>MWH 2019 Project Team</h2>
-					<Profiles>
-						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Anna%20Strandberg-min.jpeg"
-							imgAlt="Anna Strandberg"
-							name="Anna Strandberg"
-							position="Project Leader"
-						/>
-						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Alexi%20Ramskog-min.jpeg"
-							imgAlt="Alexi Ramskog"
-							name="Alexi Ramskog"
-							position="Project Leader"
-						/>
-						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Sidra%20Akbar-min.jpeg"
-							imgAlt="Sidra Akbar"
-							name="Sidra Akbar"
-							position="Project Leader"
-						/>
-						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Elin%20Dai-min.jpeg"
-							imgAlt="Elin Dai"
-							name="Elin Dai"
-							position="Team Leader Economy"
-						/>
-						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Anton%20Hallin-min.jpeg"
-							imgAlt="Anton Hallin"
-							name="Anton Hallin"
-							position="Team Leader Events"
-						/>
-						<ProfileCard
-							imgSrc="/static/images/profile-pictures/Julius%20Celik-min.jpeg"
-							imgAlt="Julius Celik"
-							name="Julius Celik"
-							position="Team Leader IT and Logistics"
-						/>
-					</Profiles>
-				</ProfilesWrapper>
-			</Container>
-		</ProfileFullWidthWrapper>
 	</>
 )
