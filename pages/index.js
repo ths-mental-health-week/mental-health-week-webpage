@@ -4,7 +4,7 @@ import Header from '../components/styles/Header'
 import SkewedLink from '../components/styles/SkewedLink'
 import Divider from '../components/styles/Divider'
 import TextImageRow from '../components/TextImageRow'
-import screenSizes from '../utils/screen-sizes'
+// import screenSizes from '../utils/screen-sizes'
 
 const Content = styled.main`
 	background-color: ${({ theme }) => theme.colors.white};
@@ -31,6 +31,7 @@ const Recruitment = styled.div`
 	}
 `
 
+/*
 const SponsorsWrapper = styled.div`
 	max-width: 700px;
 	margin: 0 auto;
@@ -82,6 +83,7 @@ const SponsorImage = styled.div`
 		width: 70%;
 	}
 `
+*/
 
 export default () => (
 	<>
@@ -143,45 +145,6 @@ export default () => (
 						the tools.
 					</p>
 				</TextImageRow>
-				<Divider />
-
-				<SponsorsWrapper>
-					<h2>Our sponsors</h2>
-					<PrimarySponsors>
-						<SponsorImage>
-							<img
-								src="/static/logos/Crebel.png"
-								alt="Crebel Consulting"
-							/>
-						</SponsorImage>
-						<SponsorImage className="erasmus-image">
-							<img
-								src="/static/logos/eu_flag.svg"
-								alt="Erasmus"
-							/>
-						</SponsorImage>
-					</PrimarySponsors>
-					<SecondarySponsors>
-						<SponsorImage>
-							<img
-								src="/static/logos/kth_hallen.svg"
-								alt="KTH Hallen | Nordic Wellness"
-							/>
-						</SponsorImage>
-						<SponsorImage>
-							<img
-								src="/static/logos/sidekick.svg"
-								alt="Sidekick Coffee"
-							/>
-						</SponsorImage>
-						<SponsorImage>
-							<img
-								src="/static/logos/Smiling color.png"
-								alt="Smiling"
-							/>
-						</SponsorImage>
-					</SecondarySponsors>
-				</SponsorsWrapper>
 			</Container>
 		</Content>
 	</>
