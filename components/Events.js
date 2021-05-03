@@ -94,7 +94,7 @@ export default () => (
 			<EventCard
 				imgSrc="/static/images/events/Maggan Hägglund.jpg"
 				imgAlt="Maggan Hägglund"
-				title="Drunka inte i dina känslor"
+				title="Drunkna inte i dina känslor"
 				presenter="Maggan Hägglund"
 				language="SVE"
 				date="Tuesday, May 4, 2021"
