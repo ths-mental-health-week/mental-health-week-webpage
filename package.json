@@ -19,7 +19,7 @@
 	"homepage": "https://mentalhealthweek.se/",
 	"dependencies": {
 		"fontfaceobserver": "^2.1.0",
-		"next": "^8.0.1",
+		"next": "^11.1.3",
 		"react": "^16.8.2",
 		"react-dom": "^16.8.2",
 		"styled-components": "^4.1.3"
